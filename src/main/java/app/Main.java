@@ -7,7 +7,7 @@ public class Main {
 		System.out.println("Hello Team 2 +++");
 		System.out.println("Hello Team 2 +++++");
 		System.out.println("Hello Team 2 ++");
-		System.out.println("Hello Team 2 ++");
+		System.out.println("Hello");
 	}
 
 }
