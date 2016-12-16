@@ -46,10 +46,10 @@ Benutzt ae...oe...ue
 #### Dokumentation wichtiger Code Snippets
 #### Testfaelle bedingt durch Akzeptanzkritierium
 ## Dokumentation Sprint 2
-### Taskliste der User Stories
-### UML Klassen- und Sequenzdiagramme
-### Dokumentation wichtiger Code Snippets
-### Testfaelle bedingt durch Akzeptanzkritierium
+#### Taskliste der User Stories
+#### UML Klassen- und Sequenzdiagramme
+#### Dokumentation wichtiger Code Snippets
+#### Testfaelle bedingt durch Akzeptanzkritierium
 ## Dokumentation Sprint 3
 #### Taskliste der User Stories
 #### UML Klassen- und Sequenzdiagramme
