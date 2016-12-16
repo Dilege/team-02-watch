@@ -1,0 +1,26 @@
+Ich schlage vor, dass wir direkt den Srcum-Prozess verwenden.
+Als Erstens:
+-Prodct Backlog: Liste aller User Stories.
+-U.S. genau beschreiben. 
+-Taskliste pro U.S.
+
+Dann:
+-Schätzung (in std) 
+-Priorisierung 
+- Anzahl Sprint (velocity) planen
+
+Schliesslich:
+-Rollen verteilen:
+
+* 3 Entwickler:
+--> Main
+--> Klassen 
+--> UniTest
+
+* 1 Dokumentation: (Vielleicht 2 personen in der Mitte und drei am Ende ) 
+--> Einleitung, Ziele, Randbedingungen
+--> Build-Anleitung
+--> Bedienungsanleitung
+--> Releaseplan
+--> Klassen- Sequenzdiagramm....
+- 
