@@ -106,7 +106,7 @@ public class JFrameUhr extends JFrame {
 
 			public void actionPerformed(ActionEvent e) {
 				startButton.setText("START");
-				stoppButton.setText("finish");
+				stoppButton.setText("FINISH");
 				Stoppen.stopp();
 
 			}
