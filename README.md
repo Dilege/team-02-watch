@@ -7,7 +7,7 @@ Benutzt ae...oe...ue
 ##Inhaltsverzeichnis
 
 1. [Vorraussetzungen](#vorraussetzungen)
-1. [Buil-Anleitung](#buil-anleitung)
+1. [Build-Anleitung](#buil-anleitung)
 1. [Kurze Bedienungsanleitung](#kurze-bedienungsanleitung)
 1. [User Stories](#user-stories)
 1. [Releaseplan](#releaseplan)
