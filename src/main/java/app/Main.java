@@ -7,13 +7,7 @@ public class Main {
 		System.out.println("Hello Team 2 +++");
 		System.out.println("Hello Team 2 +++++");
 		System.out.println("Hello Team 2 ++");
-<<<<<<< HEAD
-		System.out.println("Hello");
-		System.out.println("Hello");
-=======
-		System.out.println("Hello Team 2 ++");
-		System.out.println("Hello Vianney");
->>>>>>> branch 'master' of https://github.com/trinat-ampere/team-02-watch
+
 	}
 
 }
