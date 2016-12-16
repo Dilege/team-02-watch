@@ -94,7 +94,7 @@ public class JFrameUhr extends JFrame {
 		startButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
-				startButton.setText("GO!");
+				startButton.setText("Go!");
 				stoppButton.setText("STOPP");
 				Starten.start();
 			}
