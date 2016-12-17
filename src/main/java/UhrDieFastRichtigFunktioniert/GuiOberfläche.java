@@ -56,7 +56,7 @@ private void createFrame()   { //Fenster erzeugen
 		frame.setVisible(true); 
 		
 		SwingUtilities.updateComponentTreeUI(text);
-		
+		text.setText(null);
         //text.invalidate();
         //text.validate();
 		//text.repaint();
