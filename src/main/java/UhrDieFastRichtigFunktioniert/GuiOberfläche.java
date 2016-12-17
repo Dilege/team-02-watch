@@ -6,11 +6,11 @@ import java.awt.*;
 
 import javax.swing.*;
 
-public class GuiOberflï¿½che extends Uhrzeit {
+public class GuiOberfläche extends Uhrzeit {
 	
 	private  JFrame frame;
 	
-	public GuiOberflï¿½che()  {
+	public GuiOberfläche()  {
 		createFrame();
 	}
 
@@ -29,7 +29,7 @@ private void createFrame()   { //Fenster erzeugen
 		JButton button1 = new JButton("Start");
 		contentPane.add(button1);
 		JButton button2 = new JButton("Stop");
-		button2.addActionListener(actionEvent-> button2.setText("Schlieï¿½en"));		
+		button2.addActionListener(actionEvent-> button2.setText("Schließen"));		
 		contentPane.add(button2);
 		
 		
@@ -56,7 +56,7 @@ private void createFrame()   { //Fenster erzeugen
 		frame.setVisible(true); 
 		
 		SwingUtilities.updateComponentTreeUI(text);
-		text.setText(null);
+		
         //text.invalidate();
         //text.validate();
 		//text.repaint();
@@ -77,9 +77,9 @@ private void createFrame()   { //Fenster erzeugen
 		bar.add(hilfeMenu);
 		
 		//Untermenu
-		JMenuItem oeffnenItem= new JMenuItem("ï¿½ffnen");
+		JMenuItem oeffnenItem= new JMenuItem("Öffnen");
 		oeffnenItem.addActionListener(actionEvent-> {
-			System.out.println("ï¿½ffnen  geklickt");
+			System.out.println("Öffnen  geklickt");
 		});		
 		dateiMenu.add(oeffnenItem);
 		
@@ -90,7 +90,7 @@ private void createFrame()   { //Fenster erzeugen
 	            }
 	        });		
 		 dateiMenu.add(beendenItem);
-		 JMenuItem uberItem=new JMenuItem("ï¿½ber");
+		 JMenuItem uberItem=new JMenuItem("Über");
 		 hilfeMenu.add(uberItem);
 		 
 		 JMenuItem Hfarbe=new JMenuItem("Hintergrundsfarbe");
@@ -99,8 +99,8 @@ private void createFrame()   { //Fenster erzeugen
 		 JMenuItem Sfarbe=new JMenuItem("Schriftfarbe");
 		 einstellungenMenu.add(Sfarbe);
 		
-		 JMenuItem grï¿½ï¿½e=new JMenuItem("Schriftgrï¿½ï¿½e");
-		 einstellungenMenu.add(grï¿½ï¿½e);
+		 JMenuItem größe=new JMenuItem("Schriftgröße");
+		 einstellungenMenu.add(größe);
 
 		
 	}
