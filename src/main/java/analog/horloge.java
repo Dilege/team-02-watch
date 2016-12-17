@@ -1,4 +1,4 @@
-package Uhr;
+package analog;
 /* HORLOGE , par yassine_java*/
 /* Remarque :
   Quand le programme est en cours d'execution,évitez de jouer avec la souris dans la fenêtre 
@@ -46,7 +46,7 @@ public class horloge extends JFrame implements Runnable{
    int x3=500,y3=350,x33=500,y33=350,v5,v6;
    double tm=(java.lang.Math.PI)/30;  
    /* -- "tm" c'est l'angle avec lequel les aiguilles bougent,il est calcule en radian.
-          cet angle est egale a� 6 degres -- */
+          cet angle est egale a� 6 degres -- */
    double y=tm;
    double tm2=tm;
    double tm3=tm;

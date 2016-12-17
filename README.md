@@ -43,7 +43,7 @@ Dieses Git- Repository enstand im Rahmen  der Kurse Software Engieering und Prog
 <br>
 ## Ziele
 
-Ziel ist es die in den Kursen erlenten Fähigkeiten und Kompetenzen innerhalb eines einzig Projektes zu beweisen.
+Ziel ist es die in den Kursen erlenten FÃ¤higkeiten und Kompetenzen innerhalb eines einzig Projektes zu beweisen.
 <br> 
 
 ## Randbedingungen
@@ -73,6 +73,30 @@ Ziel ist es die in den Kursen erlenten Fähigkeiten und Kompetenzen innerhalb ein
 
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
+Unser Mainprogram: <br>
+ ![webapps](doku\main-routine.png)
+ <br>
+ 
+Das Appletdesign:<br> 
+
+![webapps](doku\gui1.png)
+
+Inklusive des erstellen der Buttons: <br>
+
+![webapps](doku\gui2.png)
+
+Die Klasse zum starten der Uhr:<br>
+
+![webapps](doku\startclass.png)
+
+Die Klasse zum stoppen der Uhr:<br>
+
+![webapps](doku\stoppclass.png)
+
+Um die Positon des Fensters zu speichern haben wir uns fogendes Ã¼berlegt: <br>
+![webapps](doku\memory1.png)<br>
+![webapps](doku\Memory2.png)
+
 #### Testfaelle bedingt durch Akzeptanzkritierium
 ## Dokumentation Sprint 2
 #### Taskliste der User Stories
