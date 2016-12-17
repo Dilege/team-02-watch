@@ -1,12 +1,14 @@
-# team-02-watch
+# Projekt Uhr:
+
 Watch Project Team 2
-Bitte im Code keine ä,ö,ü benutzen....
-Benutzt ae...oe...ue
+Mitglieder: Tobias, Vianney,Amalie, Mohammed
 
 
 ##Inhaltsverzeichnis
 
-1. [Vorraussetzungen](#vorraussetzungen)
+1. [Einleitung](#einleitung)
+1. [Ziele](#ziele)
+1. [Randbedingungen](#randbedingungen)
 1. [Build-Anleitung](#buil-anleitung)
 1. [Kurze Bedienungsanleitung](#kurze-bedienungsanleitung)
 1. [User Stories](#user-stories)
@@ -35,9 +37,21 @@ Benutzt ae...oe...ue
 
 <br>
 
-## Vorraussetzungen
+## Einleitung
+
+Dieses Git- Repository enstand im Rahmen  der Kurse Software Engieering und Programmieren mit Java.
+<br>
+## Ziele
+
+Ziel ist es die in den Kursen erlenten F�higkeiten und Kompetenzen innerhalb eines einzig Projektes zu beweisen.
+<br> 
+
+## Randbedingungen
+
 ## Buil-Anleitung
+
 ## Kurze Bedienungsanleitung
+
 ## User Stories
 
 ![webapps](doku\Useretories.png)
@@ -62,16 +76,25 @@ Benutzt ae...oe...ue
 #### Testfaelle bedingt durch Akzeptanzkritierium
 ## Dokumentation Sprint 2
 #### Taskliste der User Stories
+
+![webapps](doku\Task2.png)
+
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
 #### Testfaelle bedingt durch Akzeptanzkritierium
 ## Dokumentation Sprint 3
 #### Taskliste der User Stories
+
+![webapps](doku\Task3.png)
+
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
 #### Testfaelle bedingt durch Akzeptanzkritierium
 ## Dokumentation Sprint 4
 #### Taskliste der User Stories
+
+![webapps](doku\Task4.png)
+
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
 #### Testfaelle bedingt durch Akzeptanzkritierium
