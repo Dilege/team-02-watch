@@ -96,6 +96,10 @@ public class JFrameUhr extends JFrame {
 				Starten start = new Starten();
 				start.start();
 				getContentPane().add(timeF);
+				
+				
+				
+				
 			}
 		});
 
