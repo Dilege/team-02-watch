@@ -39,9 +39,24 @@ Benutzt ae...oe...ue
 ## Buil-Anleitung
 ## Kurze Bedienungsanleitung
 ## User Stories
+
+![webapps](doku\Useretories.png)
+
+<br>
+
 ## Releaseplan
+
+![webapps](doku\Releaseplan.png)
+
+<br>
+
 ## Dokumentation Sprint 1
 #### Taskliste der User Stories
+
+![webapps](doku\Task1.png)
+
+
+
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
 #### Testfaelle bedingt durch Akzeptanzkritierium
