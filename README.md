@@ -91,7 +91,7 @@ Die Klasse zum starten der Uhr:
 
 Die Klasse zum stoppen der Uhr:
 
-![webapps](doku/stoppclass.png)
+![id](doku/stoppclass.png)
 
 Um die Positon des Fensters zu speichern haben wir uns fogendes überlegt:
 
