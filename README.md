@@ -103,7 +103,7 @@ Um die Positon des Fensters zu speichern haben wir uns fogendes überlegt:
 ## Dokumentation Sprint 2
 #### Taskliste der User Stories
 
-![webapps](doku\Task2.png)
+![webapps](doku/Task2.png)
 
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
