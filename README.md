@@ -60,16 +60,16 @@ Ziel ist es die in den Kursen erlenten Fähigkeiten und Kompetenzen innerhalb ei
 
 ## User Stories
 
-![](doku/Useretories.png)
+![webapps](doku/Useretories.png)
 
 ## Releaseplan
 
-![](doku/Releaseplan.png)
+![webapps](doku/Releaseplan.png)
 
 ## Dokumentation Sprint 1
 #### Taskliste der User Stories
 
-![](doku/Task1.png)
+![webapps](doku/Task1.png)
 
 
 
@@ -77,23 +77,23 @@ Ziel ist es die in den Kursen erlenten Fähigkeiten und Kompetenzen innerhalb ei
 #### Dokumentation wichtiger Code Snippets
 Unser Mainprogram: 
 
- ![](team-02-watch/doku/main-routine.PNG)
+ ![webapps](doku/main-routine.PNG)
  
 Das Appletdesign: 
 
-![](doku/gui1.png)
+![webapps](doku/gui1.png)
 
 Inklusive des erstellen der Buttons:
 
-![](doku/gui2.png)
+![webapps](doku/gui2.png)
 
 Die Klasse zum starten der Uhr:
 
-![](doku/startclass.png)
+![webapps](doku/startclass.png)
 
 Die Klasse zum stoppen der Uhr:
 
-![id](doku/stoppclass.png)
+![webapps](doku/stoppclass.png)
 
 Um die Positon des Fensters zu speichern haben wir uns fogendes überlegt:
 
