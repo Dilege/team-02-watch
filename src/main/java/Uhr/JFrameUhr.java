@@ -1,23 +1,28 @@
 package Uhr;
 
 import java.awt.EventQueue;
+import java.awt.Font;
+
 import javax.swing.JFrame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-
-import Uhr.Starten;
-import Uhr.Stoppen;
-
 import javax.swing.JButton;
+import javax.swing.JDesktopPane;
+import javax.swing.JInternalFrame;
+import javax.swing.JLayeredPane;
+import javax.swing.JTabbedPane;
+import javax.swing.JToggleButton;
+import javax.swing.JTextPane;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
 public class JFrameUhr extends JFrame {
-	private JTextField textField;
+	public static JTextField timeF;
 
 	/**
 	 * Launch the application.
@@ -113,14 +118,17 @@ public class JFrameUhr extends JFrame {
 			}
 		});
 		
+	
+		timeF = new JTextField(10);
+		timeF.setBounds(74, 61, 290, 80);
+		timeF.setFont(new Font("Arial", Font.PLAIN, 48));
+		getContentPane().add(timeF);
+		timeF.setEditable(false);
+		Clock.clock();
 		
-		JLabel lblWatchOurWatch = new JLabel("Watch our Watch!");
-		lblWatchOurWatch.setBounds(10, 11, 120, 23);
-		getContentPane().add(lblWatchOurWatch);
-		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setBounds(74, 85, 285, 68);
-		getContentPane().add(lblNewLabel);
+
+	
+
 		
 	
 		
