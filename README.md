@@ -42,14 +42,20 @@ Benutzt ae...oe...ue
 
 ![webapps](doku\Useretories.png)
 
+<br>
+
 ## Releaseplan
 
 ![webapps](doku\Releaseplan.png)
+
+<br>
 
 ## Dokumentation Sprint 1
 #### Taskliste der User Stories
 
 ![webapps](doku\Task1.png)
+
+<br>
 
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
