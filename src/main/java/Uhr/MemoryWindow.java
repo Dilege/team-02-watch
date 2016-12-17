@@ -8,7 +8,7 @@ import javax.swing.*;
 import java.util.Properties;
 import java.io.*;
 
-public class MemoryWindow  {
+public class MemoryWindow extends JFrameUhr {
 	
 	/**
 	 * 
@@ -89,12 +89,11 @@ public class MemoryWindow  {
    }
    
 	public static void main(String[] args) {
-    	
-		frm=new JFrame();
-        frm.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+		frm.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         event();
        
         frm.setVisible(true);
+		
     }
 
 	
