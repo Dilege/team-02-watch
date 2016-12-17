@@ -28,7 +28,7 @@ public class Clock extends JFrameUhr {
 				int sec = jetzt.get(Calendar.SECOND);
 				timeF.setText(+stunde + ":" + min + ":" + sec);
 				timeF.setHorizontalAlignment(JTextField.CENTER);
-
+				//timeF.setText(null);
 
 			}
 
