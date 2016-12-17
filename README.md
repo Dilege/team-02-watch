@@ -77,7 +77,7 @@ Ziel ist es die in den Kursen erlenten Fähigkeiten und Kompetenzen innerhalb ei
 #### Dokumentation wichtiger Code Snippets
 Unser Mainprogram: 
 
- ![](doku/main-routine.png)
+ ![](team-02-watch/doku/main-routine.PNG)
  
 Das Appletdesign: 
 
