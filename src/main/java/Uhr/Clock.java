@@ -1,17 +1,12 @@
 package Uhr;
 
-import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-
-import javax.swing.JFormattedTextField;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.Timer;
 import java.util.Calendar;
-import java.util.TimeZone;
+
 
 public class Clock extends JFrameUhr {
 	public Clock() {

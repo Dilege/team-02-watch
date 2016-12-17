@@ -9,16 +9,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-import javax.swing.JButton;
-import javax.swing.JDesktopPane;
-import javax.swing.JInternalFrame;
-import javax.swing.JLayeredPane;
-import javax.swing.JTabbedPane;
-import javax.swing.JToggleButton;
-import javax.swing.JTextPane;
 import javax.swing.JTextField;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+import javax.swing.JButton;
+
 
 @SuppressWarnings("serial")
 public class JFrameUhr extends JFrame {
