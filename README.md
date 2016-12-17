@@ -60,16 +60,16 @@ Ziel ist es die in den Kursen erlenten Fähigkeiten und Kompetenzen innerhalb ei
 
 ## User Stories
 
-![webapps](doku/Useretories.png)
+![webapps](doku/Useretories.PNG)
 
 ## Releaseplan
 
-![webapps](doku/Releaseplan.png)
+![webapps](doku/Releaseplan.PNG)
 
 ## Dokumentation Sprint 1
 #### Taskliste der User Stories
 
-![webapps](doku/Task1.png)
+![webapps](doku/Task1.PNG)
 
 
 
@@ -81,31 +81,31 @@ Unser Mainprogram:
  
 Das Appletdesign: 
 
-![webapps](doku/gui1.png)
+![webapps](doku/gui1.PNG)
 
 Inklusive des erstellen der Buttons:
 
-![webapps](doku/gui2.png)
+![webapps](doku/gui2.PNG)
 
 Die Klasse zum starten der Uhr:
 
-![webapps](doku/startclass.png)
+![webapps](doku/startclass.PNG)
 
 Die Klasse zum stoppen der Uhr:
 
-![webapps](doku/stoppclass.png)
+![webapps](doku/stoppclass.PNG)
 
 Um die Positon des Fensters zu speichern haben wir uns fogendes überlegt:
 
-![webapps](doku/memory1.png)
+![webapps](doku/memory1.PNG)
 
-![webapps](doku/Memory2.png)
+![webapps](doku/Memory2.PNG)
 
 #### Testfaelle bedingt durch Akzeptanzkritierium
 ## Dokumentation Sprint 2
 #### Taskliste der User Stories
 
-![webapps](doku/Task2.png)
+![webapps](doku/Task2.PNG)
 
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
@@ -113,7 +113,7 @@ Um die Positon des Fensters zu speichern haben wir uns fogendes überlegt:
 ## Dokumentation Sprint 3
 #### Taskliste der User Stories
 
-![webapps](doku\Task3.png)
+![webapps](doku\Task3.PNG)
 
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
@@ -121,7 +121,7 @@ Um die Positon des Fensters zu speichern haben wir uns fogendes überlegt:
 ## Dokumentation Sprint 4
 #### Taskliste der User Stories
 
-![webapps](doku/Task4.png)
+![webapps](doku/Task4.PNG)
 
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
