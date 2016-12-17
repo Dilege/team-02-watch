@@ -55,7 +55,7 @@ Benutzt ae...oe...ue
 
 ![webapps](doku\Task1.png)
 
-<br>
+
 
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
