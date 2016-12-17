@@ -74,20 +74,20 @@ Ziel ist es die in den Kursen erlenten Fähigkeiten und Kompetenzen innerhalb ei
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
 Unser Mainprogram: 
+
  ![](doku/main-routine.png)
- 
  
 Das Appletdesign: 
 
-![webapps](doku/gui1.png)
+![](doku/gui1.png)
 
 Inklusive des erstellen der Buttons:
 
-![webapps](doku/gui2.png)
+![](doku/gui2.png)
 
 Die Klasse zum starten der Uhr:
 
-![webapps](doku/startclass.png)
+![](doku/startclass.png)
 
 Die Klasse zum stoppen der Uhr:
 
