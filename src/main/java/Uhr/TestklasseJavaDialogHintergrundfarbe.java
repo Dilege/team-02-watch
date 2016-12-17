@@ -6,23 +6,20 @@ import javax.swing.event.*;
 import javax.swing.colorchooser.*;
  
 /* ColorChooserDemo.java requires no other files. */
-public class JavaDialogSchriftfarbe extends JPanel implements ChangeListener {
+public class TestklasseJavaDialogHintergrundfarbe extends JPanel
+                              implements ChangeListener {
  
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	protected static JColorChooser tcc;
+    protected static JColorChooser tcc;
     protected JLabel banner;
  
-    public JavaDialogSchriftfarbe() {
+    public TestklasseJavaDialogHintergrundfarbe() {
         super(new BorderLayout());
  
         //Set up the banner at the top of the window
-        banner = new JLabel("Wählen Sie eine Schriftfarbe",
+        banner = new JLabel("Wählen Sie eine Hintergrundfarbe",
                             JLabel.CENTER);
-        banner.setForeground(Color.red);
-        banner.setBackground(Color.white);
+        banner.setForeground(Color.black);
+        banner.setBackground(Color.red);
         banner.setOpaque(true);
         banner.setFont(new Font("SansSerif", Font.BOLD, 24));
         banner.setPreferredSize(new Dimension(100, 65));
@@ -33,11 +30,11 @@ public class JavaDialogSchriftfarbe extends JPanel implements ChangeListener {
         bannerPanel.setBorder(BorderFactory.createTitledBorder(""));
  
         //Set up color chooser for setting text color
-        tcc = new JColorChooser(banner.getForeground());
+        tcc = new JColorChooser(banner.getBackground());
         tcc.setPreviewPanel(new JPanel());
         tcc.getSelectionModel().addChangeListener(this);
         tcc.setBorder(BorderFactory.createTitledBorder(
-                                             "Mögliche Schriftfarben"));
+                                             "Mögliche Hintergrundfarben"));
         ColorSelectionModel model = tcc.getSelectionModel();
         model.addChangeListener(new ChangeListener() {
           public void stateChanged(ChangeEvent evt) {
@@ -57,7 +54,7 @@ public class JavaDialogSchriftfarbe extends JPanel implements ChangeListener {
     public void stateChanged(ChangeEvent e) {
         ColorSelectionModel model = (ColorSelectionModel) e.getSource();
         Color newColor = model.getSelectedColor();
-        banner.setForeground(newColor);
+        banner.setBackground(newColor);
       }
    
     
@@ -78,7 +75,7 @@ public class JavaDialogSchriftfarbe extends JPanel implements ChangeListener {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
  
         //Create and set up the content pane.
-        JComponent newContentPane = new JavaDialogSchriftfarbe();
+        JComponent newContentPane = new TestklasseJavaDialogHintergrundfarbe();
         newContentPane.setOpaque(true); //content panes must be opaque
         frame.setContentPane(newContentPane);
  
@@ -87,15 +84,15 @@ public class JavaDialogSchriftfarbe extends JPanel implements ChangeListener {
         frame.setVisible(true);
     }
 
-//    public static void main(String[] args) {
-//        //Schedule a job for the event-dispatching thread:
-//        //creating and showing this application's GUI.
-//        javax.swing.SwingUtilities.invokeLater(new Runnable() {
-//            public void run() {
-//                createAndShowGUI();
-//            Color color = tcc.getColor();
-//           System.out.println(color);
-//            }
-//        });
-//    }
+    public static void main(String[] args) {
+        //Schedule a job for the event-dispatching thread:
+        //creating and showing this application's GUI.
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                createAndShowGUI();
+            Color color = tcc.getColor();
+           System.out.println(color);
+            }
+        });
+    }
 }

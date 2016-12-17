@@ -1,4 +1,6 @@
 package Uhr;
+
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -6,7 +8,7 @@ import javax.swing.event.*;
 import javax.swing.colorchooser.*;
  
 /* ColorChooserDemo.java requires no other files. */
-public class JavaDialogSchriftfarbe extends JPanel implements ChangeListener {
+public class TestklasseJavaDialogSchriftfarbe extends JPanel implements ChangeListener {
  
     /**
 	 * 
@@ -15,7 +17,7 @@ public class JavaDialogSchriftfarbe extends JPanel implements ChangeListener {
 	protected static JColorChooser tcc;
     protected JLabel banner;
  
-    public JavaDialogSchriftfarbe() {
+    public TestklasseJavaDialogSchriftfarbe() {
         super(new BorderLayout());
  
         //Set up the banner at the top of the window
@@ -78,7 +80,7 @@ public class JavaDialogSchriftfarbe extends JPanel implements ChangeListener {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
  
         //Create and set up the content pane.
-        JComponent newContentPane = new JavaDialogSchriftfarbe();
+        JComponent newContentPane = new TestklasseJavaDialogSchriftfarbe();
         newContentPane.setOpaque(true); //content panes must be opaque
         frame.setContentPane(newContentPane);
  
@@ -87,15 +89,15 @@ public class JavaDialogSchriftfarbe extends JPanel implements ChangeListener {
         frame.setVisible(true);
     }
 
-//    public static void main(String[] args) {
-//        //Schedule a job for the event-dispatching thread:
-//        //creating and showing this application's GUI.
-//        javax.swing.SwingUtilities.invokeLater(new Runnable() {
-//            public void run() {
-//                createAndShowGUI();
-//            Color color = tcc.getColor();
-//           System.out.println(color);
-//            }
-//        });
-//    }
+    public static void main(String[] args) {
+        //Schedule a job for the event-dispatching thread:
+        //creating and showing this application's GUI.
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                createAndShowGUI();
+            Color color = tcc.getColor();
+           System.out.println(color);
+            }
+        });
+    }
 }
