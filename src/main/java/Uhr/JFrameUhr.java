@@ -46,19 +46,19 @@ public class JFrameUhr extends JFrame {
 	public JFrameUhr() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
-		setTitle("The Watch"); 
+		setTitle("The Watch");
 		setLocationRelativeTo(null);
 
-		// Menüzeile (JMenuBar) erzeugen und in das Fenster (JFrame) einfügen
+		// Menuezeile (JMenuBar) erzeugen und in das Fenster (JFrame) einfuegen
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 
-		// Menü (konfig) erzeugen und in die Menüzeile (JMenuBar) einfügen
+		// Menue (konfig) erzeugen und in die Menuezeile (JMenuBar) einfuegen
 		JMenu konfig = new JMenu("Einstellungen");
 		menuBar.add(konfig);
 
-		// Menüeinträge (BackgroundColorItem) erzeugen und dem Menü (JMenu)
-		// "Konfiguration" hinzufügen
+		// Menueeintraege (BackgroundColorItem) erzeugen und dem Menue (JMenu)
+		// "Konfiguration" hinzufuegen
 		JMenuItem BackgroundColorItem = new JMenuItem("Hintergrundfarbe");
 		BackgroundColorItem.addActionListener(new ActionListener() {
 
