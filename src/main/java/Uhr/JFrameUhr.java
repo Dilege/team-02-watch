@@ -1,23 +1,21 @@
 package Uhr;
 
 import java.awt.EventQueue;
+import java.awt.Font;
+
 import javax.swing.JFrame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-
-import Uhr.Starten;
-import Uhr.Stoppen;
-
-import javax.swing.JButton;
 import javax.swing.JTextField;
-import javax.swing.JLabel;
+import javax.swing.JButton;
+
 
 @SuppressWarnings("serial")
 public class JFrameUhr extends JFrame {
-	private JTextField textField;
+	public static JTextField timeF;
 
 	/**
 	 * Launch the application.
@@ -63,8 +61,8 @@ public class JFrameUhr extends JFrame {
 		});
 		konfig.add(BackgroundColorItem);
 
-		// Menueeintraege (writingColorItem) erzeugen und dem Menue (JMenu)
-		// "Schriftfarbe" hinzufuegen
+		// Menüeinträge (writingColorItem) erzeugen und dem Menü (JMenu)
+		// "Schriftfarbe" hinzufügen
 		JMenuItem writingColorItem = new JMenuItem("Schriftfarbe");
 		writingColorItem.addActionListener(new ActionListener() {
 
@@ -74,8 +72,8 @@ public class JFrameUhr extends JFrame {
 		});
 		konfig.add(writingColorItem);
 
-		// Menueeinträge (writingSize) erzeugen und dem Menue (JMenu)
-		// "Schriftfarbe" hinzufuegen
+		// Menüeinträge (writingSize) erzeugen und dem Menü (JMenu)
+		// "Schriftfarbe" hinzufügen
 		JMenuItem writingSize = new JMenuItem("Schriftgroesse");
 		writingSize.addActionListener(new ActionListener() {
 
@@ -88,37 +86,44 @@ public class JFrameUhr extends JFrame {
 
 		final JButton startButton = new JButton("START");
 		final JButton stoppButton = new JButton("STOPP");
-
+		
 		startButton.setBounds(10, 206, 202, 23);
 		getContentPane().add(startButton);
 		startButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
-				startButton.setText("GO!");
+				startButton.setText("Go!");
 				stoppButton.setText("STOPP");
-				Starten.start();
+				Starten.start(); 
 			}
 		});
 
+		
 		stoppButton.setBounds(229, 206, 195, 23);
 		getContentPane().add(stoppButton);
 		stoppButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
 				startButton.setText("START");
-				stoppButton.setText("FINISH");
-				Stoppen.stopp();
-
+				stoppButton.setText("finish");
+				Stoppen.stopp(); 
+				
 			}
 		});
+		
+	
+		timeF = new JTextField(10);
+		timeF.setBounds(74, 61, 290, 80);
+		timeF.setFont(new Font("Arial", Font.PLAIN, 48));
+		getContentPane().add(timeF);
+		timeF.setEditable(false);
+		Clock.clock();
+		
 
-		JLabel lblWatchOurWatch = new JLabel("Watch our Watch!");
-		lblWatchOurWatch.setBounds(10, 11, 120, 23);
-		getContentPane().add(lblWatchOurWatch);
+	
 
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setBounds(74, 85, 285, 68);
-		getContentPane().add(lblNewLabel);
-
+		
+	
+		
 	}
 }

@@ -1,6 +1,5 @@
 package Uhr;
 
-@SuppressWarnings("serial")
 public class Starten extends JFrameUhr{
 
 
