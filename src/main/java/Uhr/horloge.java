@@ -12,31 +12,31 @@ import java.awt.*;
 
 
 public class horloge extends JFrame implements Runnable{  
-/* deux façons de créer un thread:
-  - Création d'un objet qui hérite de la classe Thread
-  - Execution de la primitive new Thread() sur un objet qui implémente l'interface Runnable
+/* deux facons de creer un thread:
+  - Creation d'un objet qui herite de la classe Thread
+  - Execution de la primitive new Thread() sur un objet qui implemente l'interface Runnable
     (et c'est ce k'on a fait dans ce programme)  */
    
        
-       //- L'ecouteur de la fenêtre
+       //- L'ecouteur de la fenetre
      class EF extends WindowAdapter //qd on quitte la fenetre
       {
         public void windowClosing(WindowEvent e)
         {JOptionPane.showMessageDialog(null,"Merci pour votre petite visite - yassine_java");}
       }//-------------------------
    
-    Thread h;          //déclaration du thread h 
-    public void run()  //la méthode vertuelle run() est obligatoire (voir cours "les threads" !!!) 
+    Thread h;          //declaration du thread h 
+    public void run()  //la methode vertuelle run() est obligatoire (voir cours "les threads" !!!) 
    {
    	while(true)
    	{
    	  try{h.sleep(1000);} //vous pouvez essayer avec "h.sleep(1)" pour bien tester le prog
    	  //try{h.sleep(1);}  <----------------------------------------------------------------|
-   	  //méthode sleep de la classe Thread : sleep (en milli-secondes)
+   	  //methode sleep de la classe Thread : sleep (en milli-secondes)
       catch(InterruptedException e){}
       repaint();
     } 
-    //repaint() : fait appel à la méthode paint()
+    //repaint() : fait appel a la methode paint()
   
    }
    //------------------------------
@@ -45,13 +45,13 @@ public class horloge extends JFrame implements Runnable{
    int x2=500,y2=300,x22=500,y22=300,v3,v4;
    int x3=500,y3=350,x33=500,y33=350,v5,v6;
    double tm=(java.lang.Math.PI)/30;  
-   /* -- "tm" c'est l'angle avec lequel les aiguilles bougent,il est calculé en radian.
-          cet angle est égale à 6 degrés -- */
+   /* -- "tm" c'est l'angle avec lequel les aiguilles bougent,il est calcule en radian.
+          cet angle est egale a� 6 degres -- */
    double y=tm;
    double tm2=tm;
    double tm3=tm;
    
-   //- début de paint() : la méthode qui dessine tout
+   //- debut de paint() : la methode qui dessine tout
    public void paint(Graphics g){
     
     //---- police et type et size du texte ----
@@ -86,8 +86,8 @@ public class horloge extends JFrame implements Runnable{
     //------------------------
 
     //--- mouvement des aiguilles --
-    g.setColor(Color.black);// pour effacer la dernière position de l'aiguille
-    g.drawLine(x0,y0,v1,v2);// et donc elle apparait comme si elle s'était deplacé
+    g.setColor(Color.black);// pour effacer la dernere position de l'aiguille
+    g.drawLine(x0,y0,v1,v2);// et donc elle apparait comme si elle s'etait deplace
     
     
  	x11=x1+(int)(200*(java.lang.Math.sin(tm)));
@@ -97,7 +97,7 @@ public class horloge extends JFrame implements Runnable{
     g.drawLine(x0,y0,x11,y11); 
     i++;
     tm+=y;
-    //A chaque fois l'angle de l'aiguille est changé -- 
+    //A chaque fois l'angle de l'aiguille est change -- 
     //Et on calcule la nouvelle position --
      if(i==60)       //si l aiguille des secondes atteind 60 secondes  
      {               //celui des minutes doit bouger et meme chose quand 
@@ -138,9 +138,9 @@ public class horloge extends JFrame implements Runnable{
    
     g.setColor(Color.BLACK);
     g.fillRect(410,70,200,60);  
-    /* -- NB:j ai utilisé le réctangle pour pouvoir afficher correctement  
-    l horloge numérique,
-    à chaque dessin du rectangle il efface le dernier affichage numérique et donc évite un 
+    /* -- NB:j ai utilise le rectangle pour pouvoir afficher correctement  
+    l horloge numerique,
+    à chaque dessin du rectangle il efface le dernier affichage numerique et donc evite un 
     un entassemnt de chiffres les uns sur les autres -- */
                                 
     g.setColor(Color.white);
@@ -155,19 +155,19 @@ public class horloge extends JFrame implements Runnable{
     	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
     	/*
     	le but de cette instruction est :
-    	lorsqu'on ferme la fenêtre graphique 	
+    	lorsqu'on ferme la fenetre graphique 	
     	le message suivant apparait sur la fenetre DOS :
     	"Press any key to continue ..." 
-    	permettant ainsi de quitter facilement la fenêtre DOS
+    	permettant ainsi de quitter facilement la fenetre DOS
     	*/
     
         addWindowListener(new EF());//
-        setVisible(true);   //pour que la fenêtre divienne visible !
-        setSize(1024,768);  //dimensions de la fenêtre
+        setVisible(true);   //pour que la fenetre divienne visible !
+        setSize(1024,768);  //dimensions de la fenetre
         setBackground(Color.black);//couleur du fond(noir)
         
-        h=new Thread(this);   //création
-        h.start();            //méthode de la classe Thread,pour lancer la méthode run()
+        h=new Thread(this);   //creation
+        h.start();            //methode de la classe Thread,pour lancer la methode run()
        
    		}         
    		

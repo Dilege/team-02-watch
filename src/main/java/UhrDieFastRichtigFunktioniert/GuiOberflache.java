@@ -29,7 +29,7 @@ private void createFrame()   { //Fenster erzeugen
 		JButton button1 = new JButton("Start");
 		contentPane.add(button1);
 		JButton button2 = new JButton("Stop");
-		button2.addActionListener(actionEvent-> button2.setText("Schließen"));		
+		button2.addActionListener(actionEvent-> button2.setText("Schliesen"));		
 		contentPane.add(button2);
 		
 		
@@ -77,9 +77,9 @@ private void createFrame()   { //Fenster erzeugen
 		bar.add(hilfeMenu);
 		
 		//Untermenu
-		JMenuItem oeffnenItem= new JMenuItem("Öffnen");
+		JMenuItem oeffnenItem= new JMenuItem("Oeffnen");
 		oeffnenItem.addActionListener(actionEvent-> {
-			System.out.println("Öffnen  geklickt");
+			System.out.println("Oeffnen  geklickt");
 		});		
 		dateiMenu.add(oeffnenItem);
 		
@@ -90,7 +90,7 @@ private void createFrame()   { //Fenster erzeugen
 	            }
 	        });		
 		 dateiMenu.add(beendenItem);
-		 JMenuItem uberItem=new JMenuItem("Über");
+		 JMenuItem uberItem=new JMenuItem("Ueber");
 		 hilfeMenu.add(uberItem);
 		 
 		 JMenuItem Hfarbe=new JMenuItem("Hintergrundsfarbe");
@@ -99,8 +99,8 @@ private void createFrame()   { //Fenster erzeugen
 		 JMenuItem Sfarbe=new JMenuItem("Schriftfarbe");
 		 einstellungenMenu.add(Sfarbe);
 		
-		 JMenuItem große=new JMenuItem("Schriftgröße");
-		 einstellungenMenu.add(große);
+		 JMenuItem grosse=new JMenuItem("Schriftgrosse");
+		 einstellungenMenu.add(grosse);
 
 		
 	}
