@@ -80,6 +80,7 @@ public class Gui extends JFrame {
 				startButton.setText("START");
 				stoppButton.setText("finish");
 				Stoppen.stopp();
+				
 
 			}
 		});

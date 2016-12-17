@@ -13,6 +13,7 @@ public class Main {
 					Gui frame = new Gui();
 					frame.setVisible(true);
 			        
+					//MemoryWindow.event();
 					
 				} catch (Exception e) {
 					e.printStackTrace();
