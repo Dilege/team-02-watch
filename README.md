@@ -58,23 +58,23 @@ Ziel ist es die in den Kursen erlenten Fähigkeiten und Kompetenzen innerhalb ei
 
 ## User Stories
 
-![webapps](doku/Useretories.png)
+![](doku/Useretories.png)
 
 ## Releaseplan
 
-![webapps](doku/Releaseplan.png)
+![](doku/Releaseplan.png)
 
 ## Dokumentation Sprint 1
 #### Taskliste der User Stories
 
-![webapps](doku/Task1.png)
+![](doku/Task1.png)
 
 
 
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
 Unser Mainprogram: 
- ![webapps](doku/main-routine.png)
+ ![](doku/main-routine.png)
  
  
 Das Appletdesign: 
