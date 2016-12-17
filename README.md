@@ -1,6 +1,7 @@
 # Projekt Uhr:
 
-Watch Project Team 2 <br>
+Watch Project Team 2 
+
 Mitglieder: Tobias, Vianney,Amalie, Mohammed
 
 
@@ -18,16 +19,19 @@ Mitglieder: Tobias, Vianney,Amalie, Mohammed
     + [UML Klassen- und Sequenzdiagramme](#uml-klassen-und-sequenzdiagramme)
     + [Dokumentation wichtiger Code Snippets](#dokumentation-wichtiger-code-snippets)
     + [Testfaelle bedingt durch Akzeptanzkritierium](#testfaelle-bedingt-durch-akzeptanzkritierium)
+    
 1. [Dokumentation Sprint 2](#dokumentation-sprint-2)
     + [Taskliste der User Stories](#taskliste-der-user-stories)
     + [UML Klassen- und Sequenzdiagramme](#uml-klassen-und-sequenzdiagramme)
     + [Dokumentation wichtiger Code Snippets](#dokumentation-wichtiger-code-snippets)
     + [Testfaelle bedingt durch Akzeptanzkritierium](#testfaelle-bedingt-durch-akzeptanzkritierium)
+    
 1. [Dokumentation Sprint 3](#dokumentation-sprint-3)
     + [Taskliste der User Stories](#taskliste-der-user-stories)
     + [UML Klassen- und Sequenzdiagramme](#uml-klassen-und-sequenzdiagramme)
     + [Dokumentation wichtiger Code Snippets](#dokumentation-wichtiger-code-snippets)
     + [Testfaelle bedingt durch Akzeptanzkritierium](#testfaelle-bedingt-durch-akzeptanzkritierium)
+    
 1. [Dokumentation Sprint 4](#dokumentation-sprint-4)
     + [Taskliste der User Stories](#taskliste-der-user-stories)
     + [UML Klassen- und Sequenzdiagramme](#uml-klassen-und-sequenzdiagramme)
@@ -35,16 +39,16 @@ Mitglieder: Tobias, Vianney,Amalie, Mohammed
     + [Testfaelle bedingt durch Akzeptanzkritierium](#testfaelle-bedingt-durch-akzeptanzkritierium)    
     
 
-<br>
+
+
 
 ## Einleitung 
 
 Dieses Git- Repository enstand im Rahmen  der Kurse Software Engieering und Programmieren mit Java.
-<br>
+
 ## Ziele
 
 Ziel ist es die in den Kursen erlenten Fähigkeiten und Kompetenzen innerhalb eines einzig Projektes zu beweisen.
-<br> 
 
 ## Randbedingungen
 
@@ -56,13 +60,9 @@ Ziel ist es die in den Kursen erlenten Fähigkeiten und Kompetenzen innerhalb ei
 
 ![webapps](doku\Useretories.png)
 
-<br>
-
 ## Releaseplan
 
 ![webapps](doku\Releaseplan.png)
-
-<br>
 
 ## Dokumentation Sprint 1
 #### Taskliste der User Stories
