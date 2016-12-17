@@ -1,8 +1,6 @@
 package Uhr;
 
 import java.awt.EventQueue;
-import java.awt.Font;
-
 import javax.swing.JFrame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -89,12 +87,15 @@ public class JFrameUhr extends JFrame {
 		
 		startButton.setBounds(10, 206, 202, 23);
 		getContentPane().add(startButton);
+		
 		startButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
 				startButton.setText("Go!");
 				stoppButton.setText("STOPP");
-				Starten.start(); 
+				Starten start = new Starten();
+				start.start();
+				getContentPane().add(timeF);
 			}
 		});
 
@@ -111,19 +112,17 @@ public class JFrameUhr extends JFrame {
 			}
 		});
 		
-	
-		timeF = new JTextField(10);
-		timeF.setBounds(74, 61, 290, 80);
-		timeF.setFont(new Font("Arial", Font.PLAIN, 48));
-		getContentPane().add(timeF);
-		timeF.setEditable(false);
-		Clock.clock();
+		
+		
 		
 
-	
-
-		
-	
-		
 	}
+	/*public void start(){
+	timeF = new JTextField(10);
+	timeF.setBounds(74, 61, 290, 80);
+	timeF.setFont(new Font("Arial", Font.HANGING_BASELINE, 48));
+	
+	timeF.setEditable(false);
+	Clock.clock();
+	}*/
 }
