@@ -10,10 +10,10 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 
 @SuppressWarnings("serial")
-public class JFrameUhr extends JFrame {
+public class Gui extends JFrame {
 	public static JTextField timeF;
 
-	public JFrameUhr() {
+	public Gui() {
 
 		// Frame
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

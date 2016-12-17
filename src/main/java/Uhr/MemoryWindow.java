@@ -8,12 +8,7 @@ import javax.swing.*;
 import java.util.Properties;
 import java.io.*;
 
-public class MemoryWindow extends JFrameUhr {
-	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 2386063740522664443L;
+public class MemoryWindow  {
 	
 	private static JFrame frm;
 
@@ -89,6 +84,7 @@ public class MemoryWindow extends JFrameUhr {
    }
    
 	public static void main(String[] args) {
+		
 		frm.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         event();
        

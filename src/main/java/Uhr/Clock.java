@@ -7,13 +7,9 @@ import javax.swing.JTextField;
 import javax.swing.Timer;
 import java.util.Calendar;
 
-
-public class Clock extends JFrameUhr {
-	public Clock() {
-	}
+public class Clock extends Gui {
 
 	private static final long serialVersionUID = 1L;
-
 	JPanel panel;
 
 	public static void clock() {
@@ -28,9 +24,6 @@ public class Clock extends JFrameUhr {
 				int sec = jetzt.get(Calendar.SECOND);
 				timeF.setText(+stunde + ":" + min + ":" + sec);
 				timeF.setHorizontalAlignment(JTextField.CENTER);
-				 
-
-
 			}
 
 		});

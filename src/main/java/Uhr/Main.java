@@ -10,7 +10,7 @@ public class Main {
 			public void run() {
 				try {
 					
-					JFrameUhr frame = new JFrameUhr();
+					Gui frame = new Gui();
 					frame.setVisible(true);
 			        
 					
