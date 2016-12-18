@@ -35,25 +35,25 @@ public class Gui extends JFrame {
 		BackgroundColorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Hintergrundfarbe auswaehlen");
-				Dialog.chooseColorHinterground();
-				Dialog.event();
+				Farben.chooseColorHinterground();
+				Farben.event();
 				
 		            }
 		        });
 		konfig.add(BackgroundColorItem);
-		Dialog.hintergrundFarbe=Dialog.hcolor;
+		Farben.hintergrundFarbe=Farben.hcolor;
 	
 		
 		// Unter-Menu Schriftfarbe
 		JMenuItem writingColorItem = new JMenuItem("Schriftfarbe");
 		writingColorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Dialog.chooseColorSchrift();
-				Dialog.event();
+				Farben.chooseColorSchrift();
+				Farben.event();
 			}
 		});
 		konfig.add(writingColorItem);
-		Dialog.schriftFarbe=Dialog.scolor;
+		Farben.schriftFarbe=Farben.scolor;
 
 		// Unter-Menu Schriftgroesse
 		JMenuItem writingSize = new JMenuItem("Schriftgroesse");

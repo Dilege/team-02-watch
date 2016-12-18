@@ -6,12 +6,12 @@ import javax.swing.JButton;
 import javax.swing.JColorChooser;
 import javax.swing.JTextField;
 
-public class Dialog extends Memory {
+public class Farben extends MemoryFarben {
 
 	static Color ausgewaehlteFarbe;
 	static JTextField lab;
 	
-	public Dialog() {
+	public Farben() {
 
 		try {
 			restoreFile(frm);

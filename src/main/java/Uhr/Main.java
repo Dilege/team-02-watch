@@ -17,10 +17,10 @@ public class Main {
 			    MemoryWindow.event();
 			    
 			    
-			    Memory.frm =frame;
-			    Dialog.lab = Gui.timeF.setText(t);; 
-			    Dialog.event();
-			    new Dialog();
+			    MemoryFarben.frm =frame;
+			    Farben.lab = Gui.timeF; 
+			    Farben.event();
+			    new Farben();
 			        
 					
 				} catch (Exception e) {
