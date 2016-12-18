@@ -15,6 +15,10 @@ public class Main {
 			    frame.setVisible(true);
 			    MemoryWindow.frm =frame;
 			    MemoryWindow.event();
+			    
+			 
+			    Memory.frm =frame;
+			    Dialog.event();
 			        
 					
 				} catch (Exception e) {

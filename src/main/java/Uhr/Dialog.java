@@ -1,4 +1,4 @@
-package Test;
+package Uhr;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
@@ -25,10 +25,6 @@ public class Dialog extends Memory {
 	JButton hinterground = new JButton();
 	JButton schrift = new JButton();
 
-	public static void main(String[] args) {
-		new Dialog();
-	}
-	
 	public Dialog() {
 
 		frm = f;
