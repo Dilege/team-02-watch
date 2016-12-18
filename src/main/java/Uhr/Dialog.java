@@ -19,7 +19,7 @@ import javax.swing.JPanel;
 
 public class Dialog extends Memory {
 
-	Color ausgewaehlteFarbe;
+	static Color ausgewaehlteFarbe;
 	JLabel lab = new JLabel("Beispiel JLabel");
 	//JFrame f = new JFrame();
 	JButton hinterground = new JButton();
@@ -51,7 +51,7 @@ public class Dialog extends Memory {
 		//f.setVisible(true);
 	}
 
-	public void chooseColorHinterground() {
+	public static void chooseColorHinterground() {
 		ausgewaehlteFarbe = JColorChooser.showDialog(null, "Farbauswahl", null);
 		Color c = ausgewaehlteFarbe;
 		hintergrundFarbe = c;
@@ -67,12 +67,12 @@ public class Dialog extends Memory {
 	}
 
 	public void settingButton() {
-		hinterground.setBounds(320, 10, 20, 20);
-		Container contentPane = frm.getContentPane();
-		contentPane.add(hinterground);
+		//hinterground.setBounds(320, 10, 20, 20);
+		//Container contentPane = frm.getContentPane();
+		//contentPane.add(hinterground);
 		frm.add(hinterground);
 		schrift.setBounds(350, 10, 20, 20);
-		contentPane.add(schrift);
+		//contentPane.add(schrift);
 		frm.add(schrift);
 		ListenderHinterground();
 		ListenderSchrift();
@@ -81,8 +81,7 @@ public class Dialog extends Memory {
 	public void ListenderHinterground(){
 		hinterground.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				chooseColorHinterground();
-				event();
+			
 
 			}
 		});
