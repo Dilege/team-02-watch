@@ -25,7 +25,6 @@ public class Dialog extends Memory {
 	JButton hinterground = new JButton();
 	JButton schrift = new JButton();
 
-	// main-Methode
 	public static void main(String[] args) {
 		new Dialog();
 	}

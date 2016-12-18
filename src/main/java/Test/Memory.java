@@ -22,7 +22,7 @@ public class Memory {
 	static Color scolor;
 	static File file = new File("Color.txt");
 	static Properties p = new Properties();
-	static JFrame frm;
+	protected static JFrame frm;
 
 	public static void storeFile(Frame f1) throws IOException {
         //Hintergroundfarben in den Variablen hr,hg und hb speichern
