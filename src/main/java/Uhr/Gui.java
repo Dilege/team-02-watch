@@ -2,7 +2,6 @@ package Uhr;
 
 import javax.swing.JFrame;
 
-import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JMenu;
@@ -44,19 +43,22 @@ public class Gui extends JFrame {
 		            }
 		        });
 		konfig.add(BackgroundColorItem);
+		Dialog.hintergrundFarbe=Dialog.hcolor;
 		
 		// Unter-Menu Schriftfarbe
 		JMenuItem writingColorItem = new JMenuItem("Schriftfarbe");
 		writingColorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Schriftfarbe auswaehlen");
+				/*System.out.println("Schriftfarbe auswaehlen");
 				JavaDialogSchriftfarbe.createAndShowGUI();
 				Color color = JavaDialogHintergrundfarbe.tcc.getColor();
-				getContentPane().setBackground(color); 
-				
+				getContentPane().setBackground(color); */
+				Dialog.chooseColorSchrift();
+				Dialog.event();
 			}
 		});
 		konfig.add(writingColorItem);
+		Dialog.schriftFarbe=Dialog.scolor;
 
 		// Unter-Menu Schriftgroesse
 		JMenuItem writingSize = new JMenuItem("Schriftgroesse");
@@ -78,8 +80,7 @@ public class Gui extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				startButton.setText("Go!");
 				stoppButton.setText("STOPP");
-				Starten start = new Starten();
-				start.start();
+				StartStopp.start();
 				getContentPane().add(timeF);
 			}
 		});
@@ -91,7 +92,7 @@ public class Gui extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				startButton.setText("START");
 				stoppButton.setText("finish");
-				Stoppen.stopp();
+				StartStopp.stopp();
 				
 
 			}

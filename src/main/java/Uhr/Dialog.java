@@ -20,14 +20,14 @@ import javax.swing.JPanel;
 public class Dialog extends Memory {
 
 	static Color ausgewaehlteFarbe;
-	JLabel lab = new JLabel("Beispiel JLabel");
+	static JLabel lab = new JLabel("Beispiel JLabel");
 	//JFrame f = new JFrame();
 	JButton hinterground = new JButton();
 	JButton schrift = new JButton();
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		new Dialog();
-	}
+	}*/
 	
 	public Dialog() {
 
@@ -46,7 +46,7 @@ public class Dialog extends Memory {
 		lab.setForeground(scolor);
 		frm.add(lab);
 		//f.setLayout(null);
-		settingButton();
+		//settingButton();
 		//f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//f.setVisible(true);
 	}
@@ -58,7 +58,7 @@ public class Dialog extends Memory {
 		frm.getContentPane().setBackground(c);
 	}
 
-	public void chooseColorSchrift() {
+	public static void chooseColorSchrift() {
 		ausgewaehlteFarbe = JColorChooser.showDialog(null, "Farbauswahl", null);
 		Color c = ausgewaehlteFarbe;
 		schriftFarbe = c;
@@ -66,7 +66,7 @@ public class Dialog extends Memory {
 
 	}
 
-	public void settingButton() {
+	/*public void settingButton() {
 		//hinterground.setBounds(320, 10, 20, 20);
 		//Container contentPane = frm.getContentPane();
 		//contentPane.add(hinterground);
@@ -81,7 +81,6 @@ public class Dialog extends Memory {
 	public void ListenderHinterground(){
 		hinterground.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-			
 
 			}
 		});
@@ -98,5 +97,5 @@ public class Dialog extends Memory {
 			}
 		});
 		schriftFarbe=scolor;
-	}
+	}*/
 }
