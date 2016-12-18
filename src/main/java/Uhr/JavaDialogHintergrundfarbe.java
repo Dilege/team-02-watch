@@ -34,7 +34,7 @@ public class JavaDialogHintergrundfarbe extends JPanel
         tcc.setPreviewPanel(new JPanel());
         tcc.getSelectionModel().addChangeListener(this);
         tcc.setBorder(BorderFactory.createTitledBorder(
-                                             "Mögliche Schriftfarben"));
+                                             "Mögliche Hintergrundfarben"));
         ColorSelectionModel model = tcc.getSelectionModel();
         model.addChangeListener(new ChangeListener() {
           public void stateChanged(ChangeEvent evt) {
@@ -69,7 +69,7 @@ public class JavaDialogHintergrundfarbe extends JPanel
      * this method should be invoked from the
      * event-dispatching thread.
      */
-    protected static void createAndShowGUI() {
+    private static void createAndShowGUI() {
         //Create and set up the window.
         JFrame frame = new JFrame("Schriftfarbe");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -84,15 +84,15 @@ public class JavaDialogHintergrundfarbe extends JPanel
         frame.setVisible(true);
     }
 
-    /*public static void main(String[] args) {
-        //Schedule a job for the event-dispatching thread:
-        //creating and showing this application's GUI.
-        javax.swing.SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                createAndShowGUI();
-            Color color = tcc.getColor();
-           System.out.println(color);
-            }
-        });
-    }*/
+//    public static void main(String[] args) {
+//        //Schedule a job for the event-dispatching thread:
+//        //creating and showing this application's GUI.
+//        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+//            public void run() {
+//                createAndShowGUI();
+//            Color color = tcc.getColor();
+//           System.out.println(color);
+//            }
+//        });
+//    }
 }

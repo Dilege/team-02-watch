@@ -13,10 +13,8 @@ public class Main {
 			public void run() {
 				try {
 					
-				Gui frame = new Gui();
-			    frame.setVisible(true);
-			    MemoryWindow.frm =frame; 
-			    MemoryWindow.event();
+					Gui frame = new Gui();
+					frame.setVisible(true);
 			        
 					JavaDialogSchriftfarbe javaDialogSchriftfarbe = new JavaDialogSchriftfarbe();	
 					javaDialogSchriftfarbe.setVisible(true);
@@ -33,7 +31,8 @@ public class Main {
 				try {
 					JavaDialogSchriftfarbe frame = new JavaDialogSchriftfarbe();	
 					frame.setVisible(true);
-			    
+					//MemoryWindow.event();
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
