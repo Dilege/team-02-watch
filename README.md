@@ -54,9 +54,25 @@ Ziel ist es die in den Kursen erlenten Fähigkeiten und Kompetenzen innerhalb ei
 
 ## Randbedingungen
 
+Zum Nachbauen:
+
+Java: JDK 8.0 
+Eclipse EE
+Build-Automatisierung: Maven
+
+Die Umgebungsvariable JAVA_HOME muss korrekt eingestellt sein und java muss im Datei-Pfad gefunden werden. 
+
+Einfaches Ausführen: 
+
+Java: JDK 8.0 
+
 ## Buil-Anleitung
 
+Laden Sie sich die Datei xyz.jar auf ihren Pc runter. Und führen Sie sie aus.
+
 ## Kurze Bedienungsanleitung
+
+Zum Starten der Uhr drücken Sie bitte auf Start. Sie können die Uhr mittels Stop anhalten. Unter Einstellungen können Sie die Farben und die Schriftgröße ändern.  
 
 ## User Stories
 
