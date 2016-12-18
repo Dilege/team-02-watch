@@ -16,8 +16,11 @@ public class Main {
 			    MemoryWindow.frm =frame;
 			    MemoryWindow.event();
 			    
-			    Memory.frm =frame;
-			    Dialog.event();
+			    
+			    MemoryFarben.frm =frame;
+			    Farben.lab = Gui.timeF; 
+			    Farben.event();
+			    new Farben();
 			        
 					
 				} catch (Exception e) {
