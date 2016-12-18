@@ -37,7 +37,6 @@ public class Starten extends Gui {
 				timeF.setText(+stunde + ":" + min + ":" + sec);
 				timeF.setHorizontalAlignment(JTextField.CENTER);
 				//timeF.setBackground(Color.red);
-				timeF.setBackground(Uhr.JavaDialogHintergrundfarbe.tcc.getColor());
 				
 			}
 

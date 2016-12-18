@@ -36,9 +36,10 @@ public class Gui extends JFrame {
 		BackgroundColorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Hintergrundfarbe auswaehlen");
-				JavaDialogHintergrundfarbe.createAndShowGUI();
+				/*JavaDialogHintergrundfarbe.createAndShowGUI();
 				Color color = JavaDialogHintergrundfarbe.tcc.getColor();
-				getContentPane().setBackground(color); 
+				getContentPane().setBackground(color); */
+				
 		            }
 		        });
 		konfig.add(BackgroundColorItem);
