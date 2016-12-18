@@ -1,6 +1,14 @@
 #Eigenschaften vom Frame
+<<<<<<< HEAD
 #Sun Dec 18 17:36:50 CET 2016
 b=448
 x=846
 h=310
 y=171
+=======
+#Sun Dec 18 17:14:57 CET 2016
+b=692
+x=348
+h=502
+y=220
+>>>>>>> branch 'master' of https://github.com/trinat-ampere/team-02-watch
