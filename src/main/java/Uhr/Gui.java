@@ -35,32 +35,23 @@ public class Gui extends JFrame {
 		JMenuItem BackgroundColorItem = new JMenuItem("Hintergrundfarbe");
 		BackgroundColorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				final JavaDialogHintergrundfarbe JavaDialogHintergrundfarbe = new JavaDialogHintergrundfarbe();
-				getContentPane().add(JavaDialogHintergrundfarbe);
-				javax.swing.SwingUtilities.invokeLater(new Runnable() {		            public void run() {
-		                JavaDialogHintergrundfarbe.createAndShowGUI();
-		            }
-		        });
 				System.out.println("Hintergrundfarbe auswaehlen");
 				JavaDialogHintergrundfarbe.createAndShowGUI();
 				Color color = JavaDialogHintergrundfarbe.tcc.getColor();
 				getContentPane().setBackground(color); 
-				
-			}
-		});
+		            }
+		        });
 		konfig.add(BackgroundColorItem);
 		
 		// Unter-Menu Schriftfarbe
 		JMenuItem writingColorItem = new JMenuItem("Schriftfarbe");
 		writingColorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				final JavaDialogSchriftfarbe JavaDialogSchriftfarbe = new JavaDialogSchriftfarbe();
-				getContentPane().add(JavaDialogSchriftfarbe);
-				javax.swing.SwingUtilities.invokeLater(new Runnable() {		            public void run() {
-		                JavaDialogSchriftfarbe.createAndShowGUI();
-		            }
-		        });
 				System.out.println("Schriftfarbe auswaehlen");
+				JavaDialogSchriftfarbe.createAndShowGUI();
+				Color color = JavaDialogHintergrundfarbe.tcc.getColor();
+				getContentPane().setBackground(color); 
+				
 			}
 		});
 		konfig.add(writingColorItem);
