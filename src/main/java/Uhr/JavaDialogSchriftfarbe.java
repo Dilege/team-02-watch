@@ -6,10 +6,13 @@ import javax.swing.event.*;
 import javax.swing.colorchooser.*;
  
 /* ColorChooserDemo.java requires no other files. */
-public class JavaDialogSchriftfarbe extends JPanel
-                              implements ChangeListener {
+public class JavaDialogSchriftfarbe extends JPanel implements ChangeListener {
  
-    protected static JColorChooser tcc;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	protected static JColorChooser tcc;
     protected JLabel banner;
  
     public JavaDialogSchriftfarbe() {
@@ -84,7 +87,7 @@ public class JavaDialogSchriftfarbe extends JPanel
         frame.setVisible(true);
     }
 
-    public static void main(String[] args) {
+  /*  public static void main(String[] args) {
         //Schedule a job for the event-dispatching thread:
         //creating and showing this application's GUI.
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
@@ -94,5 +97,16 @@ public class JavaDialogSchriftfarbe extends JPanel
            System.out.println(color);
             }
         });
-    }
+    }*/
+//    public static void main(String[] args) {
+//        //Schedule a job for the event-dispatching thread:
+//        //creating and showing this application's GUI.
+//        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+//            public void run() {
+//                createAndShowGUI();
+//            Color color = tcc.getColor();
+//           System.out.println(color);
+//            }
+//        });
+//    }
 }

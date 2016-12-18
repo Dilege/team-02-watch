@@ -2,16 +2,17 @@ package Uhr;
 
 import java.awt.*;
 import java.awt.event.*;
-
-import javax.swing.*;
-
 import java.util.Properties;
+
+import javax.swing.JFrame;
+
 import java.io.*;
 
-public class MemoryWindow  {
+public class MemoryWindow {
 	
-	private static JFrame frm;
-
+// Pb ici: je veux qu'à la place de JFrame frm quelqonque ce soit le frame de Gui frame (cf main)
+	protected static JFrame frm;
+	
    // public static final String fileName = "Eigenschaften.txt";
 
 	//Speichern von der Position und Groesse
@@ -59,6 +60,7 @@ public class MemoryWindow  {
         f.setBounds(r);
     }
    public static void event(){
+	  
 	   frm.addWindowListener( new WindowAdapter() {
           
         	public void windowClosing(WindowEvent we) {
@@ -68,31 +70,20 @@ public class MemoryWindow  {
                     e.printStackTrace();
                 }
                 System.exit(0);
-            }
+            } 
         });
        
         File optionsFile = new File("Eigenschaften.txt");
         if (optionsFile.exists()) {
             try {
-                restoreOptions(frm);
+                restoreOptions( frm);
             } catch(IOException ioe) {
                 ioe.printStackTrace();
             }
         } else {
-            frm.setLocationByPlatform(true);
+        	frm.setLocationByPlatform(true);
         }
    }
    
-	public static void main(String[] args) {
-		
-		frm.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
-        event();
-       
-        frm.setVisible(true);
-		
-    }
-
-	
-
 	
 }

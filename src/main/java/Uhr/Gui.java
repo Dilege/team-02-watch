@@ -1,6 +1,8 @@
 package Uhr;
 
 import javax.swing.JFrame;
+
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JMenu;
@@ -12,16 +14,16 @@ import javax.swing.JButton;
 @SuppressWarnings("serial")
 public class Gui extends JFrame {
 	public static JTextField timeF;
-
+	
 	public Gui() {
 
 		// Frame
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		setTitle("The Watch");
-		setLocationRelativeTo(null);
+		//setLocationRelativeTo(null);
 		getContentPane().setLayout(null);
-
+		
 		// Menu Einstellungen
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
@@ -33,10 +35,14 @@ public class Gui extends JFrame {
 		BackgroundColorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Hintergrundfarbe auswaehlen");
+				JavaDialogHintergrundfarbe.createAndShowGUI();
+				Color color = JavaDialogHintergrundfarbe.tcc.getColor();
+				getContentPane().setBackground(color); 
+				
 			}
 		});
 		konfig.add(BackgroundColorItem);
-
+		
 		// Unter-Menu Schriftfarbe
 		JMenuItem writingColorItem = new JMenuItem("Schriftfarbe");
 		writingColorItem.addActionListener(new ActionListener() {
