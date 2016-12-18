@@ -28,7 +28,7 @@ public class Dialog extends Memory {
 	public static void main(String[] args) {
 		new Dialog();
 	}
-
+	
 	public Dialog() {
 
 		frm = f;
