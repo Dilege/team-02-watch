@@ -72,11 +72,9 @@ public class JavaDialogSchriftfarbe extends JPanel implements ChangeListener {
      * this method should be invoked from the
      * event-dispatching thread.
      */
-<<<<<<< HEAD
+
     protected static void createAndShowGUI() {
-=======
-    void createAndShowGUI() {
->>>>>>> branch 'master' of https://github.com/trinat-ampere/team-02-watch
+
         //Create and set up the window.
         JFrame frame = new JFrame("Schriftfarbe");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

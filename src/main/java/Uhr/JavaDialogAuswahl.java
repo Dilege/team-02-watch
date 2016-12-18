@@ -3,7 +3,7 @@ package Uhr;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 
-main
+//main
 public class JavaDialogAuswahl extends JPanel {
 
 	/**
