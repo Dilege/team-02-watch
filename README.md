@@ -125,11 +125,19 @@ Um die Positon des Fensters zu speichern haben wir uns fogendes überlegt:
 
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
+
+Der Fokus in diesem Sprint lag auf dem erstellen der Farbauswahl für Schrift- und Hintergrund, sowie die Schriftgröße.
+Dementsprechend sind alle neuen Klassen recht ählich. Hier unten beispielhaft die Klasse zur Hintergrundsauswahl: 
+
+![webapps](doku/Farbe.PNG)
+
+![webapps](doku/Farbe2.PNG)
+s
 #### Testfaelle bedingt durch Akzeptanzkritierium
 ## Dokumentation Sprint 3
 #### Taskliste der User Stories
 
-![webapps](doku\Task3.PNG)
+![webapps](doku\Task3.PNG))
 
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
