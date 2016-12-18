@@ -1,6 +1,8 @@
 package Uhr;
 
 import javax.swing.JFrame;
+
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JMenu;
@@ -15,6 +17,7 @@ public class Gui extends JFrame {
 
 	public Gui() {
 
+		
 		// Frame
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
@@ -32,6 +35,12 @@ public class Gui extends JFrame {
 		JMenuItem BackgroundColorItem = new JMenuItem("Hintergrundfarbe");
 		BackgroundColorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				final JavaDialogHintergrundfarbe JavaDialogHintergrundfarbe = new JavaDialogHintergrundfarbe();
+				getContentPane().add(JavaDialogHintergrundfarbe);
+				javax.swing.SwingUtilities.invokeLater(new Runnable() {		            public void run() {
+		                JavaDialogHintergrundfarbe.createAndShowGUI();
+		            }
+		        });
 				System.out.println("Hintergrundfarbe auswaehlen");
 			}
 		});
@@ -41,6 +50,12 @@ public class Gui extends JFrame {
 		JMenuItem writingColorItem = new JMenuItem("Schriftfarbe");
 		writingColorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				final JavaDialogSchriftfarbe JavaDialogSchriftfarbe = new JavaDialogSchriftfarbe();
+				getContentPane().add(JavaDialogSchriftfarbe);
+				javax.swing.SwingUtilities.invokeLater(new Runnable() {		            public void run() {
+		                JavaDialogSchriftfarbe.createAndShowGUI();
+		            }
+		        });
 				System.out.println("Schriftfarbe auswaehlen");
 			}
 		});

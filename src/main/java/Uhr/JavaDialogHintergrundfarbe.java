@@ -69,7 +69,7 @@ public class JavaDialogHintergrundfarbe extends JPanel
      * this method should be invoked from the
      * event-dispatching thread.
      */
-    private static void createAndShowGUI() {
+    void createAndShowGUI() {
         //Create and set up the window.
         JFrame frame = new JFrame("Schriftfarbe");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
