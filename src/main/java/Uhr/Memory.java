@@ -10,8 +10,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Properties;
-
-import javax.swing.JDialog;
 import javax.swing.JFrame;
 
 public class Memory {

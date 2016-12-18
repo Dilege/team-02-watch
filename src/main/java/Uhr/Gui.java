@@ -12,7 +12,7 @@ import javax.swing.JButton;
 
 @SuppressWarnings("serial")
 public class Gui extends JFrame {
-	public static JTextField timeF;
+	public static  JTextField timeF; 
 	
 	public Gui() {
 
@@ -35,24 +35,19 @@ public class Gui extends JFrame {
 		BackgroundColorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Hintergrundfarbe auswaehlen");
-				/*JavaDialogHintergrundfarbe.createAndShowGUI();
-				Color color = JavaDialogHintergrundfarbe.tcc.getColor();
-				getContentPane().setBackground(color); */
 				Dialog.chooseColorHinterground();
 				Dialog.event();
+				
 		            }
 		        });
 		konfig.add(BackgroundColorItem);
 		Dialog.hintergrundFarbe=Dialog.hcolor;
+	
 		
 		// Unter-Menu Schriftfarbe
 		JMenuItem writingColorItem = new JMenuItem("Schriftfarbe");
 		writingColorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				/*System.out.println("Schriftfarbe auswaehlen");
-				JavaDialogSchriftfarbe.createAndShowGUI();
-				Color color = JavaDialogHintergrundfarbe.tcc.getColor();
-				getContentPane().setBackground(color); */
 				Dialog.chooseColorSchrift();
 				Dialog.event();
 			}

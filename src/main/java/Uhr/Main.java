@@ -16,8 +16,11 @@ public class Main {
 			    MemoryWindow.frm =frame;
 			    MemoryWindow.event();
 			    
+			    
 			    Memory.frm =frame;
+			    Dialog.lab = Gui.timeF.setText(t);; 
 			    Dialog.event();
+			    new Dialog();
 			        
 					
 				} catch (Exception e) {
