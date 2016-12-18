@@ -18,8 +18,8 @@ public class Main {
 			    
 			    
 			    MemoryFarben.frm =frame;
-			    Farben.lab = Gui.timeF; 
-			    Farben.event();
+			    Farben.lab = StartStopp.timeF; 
+			    MemoryFarben.event();
 			    new Farben();
 			        
 					
