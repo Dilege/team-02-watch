@@ -16,7 +16,6 @@ public class Main {
 			    MemoryWindow.frm =frame;
 			    MemoryWindow.event();
 			    
-			 
 			    Memory.frm =frame;
 			    Dialog.event();
 			        

@@ -21,7 +21,7 @@ public class Dialog extends Memory {
 
 	Color ausgewaehlteFarbe;
 	JLabel lab = new JLabel("Beispiel JLabel");
-	JFrame f = new JFrame();
+	//JFrame f = new JFrame();
 	JButton hinterground = new JButton();
 	JButton schrift = new JButton();
 
@@ -31,31 +31,31 @@ public class Dialog extends Memory {
 	
 	public Dialog() {
 
-		frm = f;
-		f.setTitle("Mein JDialog Beispiel");
-		f.setBounds(200, 200, 400, 300);
+		//frm = f;
+		//frm.setTitle("Mein JDialog Beispiel");
+		//f.setBounds(200, 200, 400, 300);
 		try {
-			restoreFile(f);
+			restoreFile(frm);
 		} catch (IOException e) {
 			
 			e.printStackTrace();
 		}
 		Color farbeH =hcolor;
-		f.getContentPane().setBackground(farbeH);
+		frm.getContentPane().setBackground(farbeH);
 		lab.setBounds(100, 100, 100, 40);
 		lab.setForeground(scolor);
-		f.add(lab);
-		f.setLayout(null);
+		frm.add(lab);
+		//f.setLayout(null);
 		settingButton();
-		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		f.setVisible(true);
+		//f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//f.setVisible(true);
 	}
 
 	public void chooseColorHinterground() {
 		ausgewaehlteFarbe = JColorChooser.showDialog(null, "Farbauswahl", null);
 		Color c = ausgewaehlteFarbe;
 		hintergrundFarbe = c;
-		f.getContentPane().setBackground(c);
+		frm.getContentPane().setBackground(c);
 	}
 
 	public void chooseColorSchrift() {
@@ -68,12 +68,12 @@ public class Dialog extends Memory {
 
 	public void settingButton() {
 		hinterground.setBounds(320, 10, 20, 20);
-		Container contentPane = f.getContentPane();
+		Container contentPane = frm.getContentPane();
 		contentPane.add(hinterground);
-		f.add(hinterground);
+		frm.add(hinterground);
 		schrift.setBounds(350, 10, 20, 20);
 		contentPane.add(schrift);
-		f.add(schrift);
+		frm.add(schrift);
 		ListenderHinterground();
 		ListenderSchrift();
 		
