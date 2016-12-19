@@ -14,12 +14,7 @@ import javax.swing.JList;
 import javax.swing.JSpinner;
 
 public class StartStopp extends Gui {
-	public StartStopp() {
-		
-		JList list = new JList();
-		list.setBounds(246, 63, 1, 1);
-		getContentPane().add(list);
-	}
+	
 		private static final long serialVersionUID = 1L;
 		 static  JTextField timeF = new JTextField();
        
@@ -28,7 +23,8 @@ public class StartStopp extends Gui {
 			 // UhrText Einstellungen
 			timeF = new JTextField(10);
 			timeF.setVisible(true);
-			timeF.setBounds(74, 61, 290, 80);
+			timeF.setBounds(74, 61, 290, 80); 
+			timeF.setForeground(MemoryFarben.schriftFarbe);
 			timeF.setFont(new Font("Arial", Font.HANGING_BASELINE, 48));
 	        timeF.setEditable(false);
 	        timeF.setHorizontalAlignment(JTextField.CENTER);

@@ -19,11 +19,13 @@ public class MemoryFarben {
 	static Color schriftFarbe;
 	static Color hcolor;
 	static Color scolor;
-	static File file = new File("SetColor.txt");
-	static Properties p = new Properties();
+	//static File file = new File("SetColor.txt");
+	//static Properties p = new Properties();
 	protected static JFrame frm;
 
 	public static void storeFile(Frame f1) throws IOException {
+		File file = new File("SetColor.txt");
+		Properties p = new Properties();
 		// Hintergroundfarben in den Variablen hr,hg und hb speichern
 		int hr = hintergrundFarbe.getRed();
 		int hg = hintergrundFarbe.getGreen();
@@ -45,6 +47,9 @@ public class MemoryFarben {
 	}
 
 	public static void restoreFile(JFrame f2) throws IOException {
+		File file = new File("SetColor.txt");
+		Properties p = new Properties();
+		
 		// Einlesen der Properties
 		BufferedReader color = new BufferedReader(new FileReader(file));
 		p.load(color);
