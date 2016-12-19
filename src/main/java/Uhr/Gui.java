@@ -1,7 +1,6 @@
 package Uhr;
 
 import javax.swing.JFrame;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JMenu;
@@ -12,7 +11,7 @@ import javax.swing.JButton;
 
 @SuppressWarnings("serial")
 public class Gui extends JFrame {
-	public static  JTextField timeF; 
+	 
 	
 	public Gui() {
 
@@ -23,12 +22,19 @@ public class Gui extends JFrame {
 		setTitle("The Watch");
 		//setLocationRelativeTo(null);
 		getContentPane().setLayout(null);
+		setResizable(false);
 		
 		// Menu Einstellungen
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		JMenu konfig = new JMenu("Einstellungen");
 		menuBar.add(konfig);
+		// Menu ZeitZonen
+		JMenu zz = new JMenu("ZeitZonen");
+		menuBar.add(zz);
+		// Menu Analogue Uhr
+		JMenu analogue = new JMenu("AnalogUhr");
+		menuBar.add(analogue);
 
 		// Unter-Menu Hintergrundfarbe
 		JMenuItem BackgroundColorItem = new JMenuItem("Hintergrundfarbe");
@@ -36,7 +42,7 @@ public class Gui extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Hintergrundfarbe auswaehlen");
 				Farben.chooseColorHinterground();
-				Farben.event();
+				MemoryFarben.event();
 				
 		            }
 		        });
@@ -49,7 +55,7 @@ public class Gui extends JFrame {
 		writingColorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Farben.chooseColorSchrift();
-				Farben.event();
+				MemoryFarben.event();
 			}
 		});
 		konfig.add(writingColorItem);
@@ -63,7 +69,26 @@ public class Gui extends JFrame {
 			}
 		});
 		konfig.add(writingSize);
+		
+		// Unter-Menu Zeitzone Europe
+		JMenuItem europe = new JMenuItem("Europa/Paris");
+		europe.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Zeitzone Paris:");
+			}
+		});
+		zz.add(europe);
 
+		// Unter-Menu Zeitzone Europe
+				JMenuItem amerika = new JMenuItem("Amerika/Boston");
+				europe.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						System.out.println("Zeitzone Boston:");
+					}
+				});
+				zz.add(amerika);
+				
+				
 		// START- STOPP Buttons
 		final JButton startButton = new JButton("START");
 		final JButton stoppButton = new JButton("STOPP");
@@ -76,7 +101,7 @@ public class Gui extends JFrame {
 				startButton.setText("Go!");
 				stoppButton.setText("STOPP");
 				StartStopp.start();
-				getContentPane().add(timeF);
+				getContentPane().add(StartStopp.timeF);
 			}
 		});
 

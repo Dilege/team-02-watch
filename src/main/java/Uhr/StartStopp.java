@@ -1,17 +1,28 @@
 package Uhr;
 
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Calendar;
 
+import javax.swing.JFrame;
 import javax.swing.JTextField;
 import javax.swing.Timer;
+import javax.swing.JSlider;
+import javax.swing.JList;
+import javax.swing.JSpinner;
 
 public class StartStopp extends Gui {
-		private static final long serialVersionUID = 1L;
-	
+	public StartStopp() {
 		
+		JList list = new JList();
+		list.setBounds(246, 63, 1, 1);
+		getContentPane().add(list);
+	}
+		private static final long serialVersionUID = 1L;
+		 static  JTextField timeF = new JTextField();
+       
 		public static void start(){
 			
 			 // UhrText Einstellungen
@@ -21,6 +32,8 @@ public class StartStopp extends Gui {
 			timeF.setFont(new Font("Arial", Font.HANGING_BASELINE, 48));
 	        timeF.setEditable(false);
 	        timeF.setHorizontalAlignment(JTextField.CENTER);
+	        //timeF.setBackground(Farben.ausgewaehlteFarbe);
+	        //timeF.setForeground(Farben.hcolor);
 	        
 	         Timer t = new Timer(1000, new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
@@ -28,7 +41,8 @@ public class StartStopp extends Gui {
 					int stunde = jetzt.get(Calendar.HOUR_OF_DAY);
 					int min = jetzt.get(Calendar.MINUTE);
 					int sec = jetzt.get(Calendar.SECOND); 
-				    timeF.setText(+stunde + ":" + min + ":" + sec);
+				    timeF.setText( stunde + ":" + min + ":" + sec);
+		
 				}
 				});
 	         t.start();

@@ -16,12 +16,13 @@ import javax.swing.JFrame;
 // Import-Anweisung f�r unser JLabel 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class Dialog extends Memory {
 
 	Color ausgewaehlteFarbe;
-	JLabel lab = new JLabel("Beispiel JLabel");
-	//JFrame f = new JFrame();
+	JTextField lab= new JTextField("ljgfd");
+	JFrame f = new JFrame();
 	JButton hinterground = new JButton();
 	JButton schrift = new JButton();
 
@@ -31,9 +32,9 @@ public class Dialog extends Memory {
 	
 	public Dialog() {
 
-		//frm = f;
-		//frm.setTitle("Mein JDialog Beispiel");
-		//f.setBounds(200, 200, 400, 300);
+		frm = f;
+		frm.setTitle("Mein JDialog Beispiel");
+		f.setBounds(200, 200, 400, 300);
 		try {
 			restoreFile(frm);
 		} catch (IOException e) {
@@ -45,10 +46,10 @@ public class Dialog extends Memory {
 		lab.setBounds(100, 100, 100, 40);
 		lab.setForeground(scolor);
 		frm.add(lab);
-		//f.setLayout(null);
+		f.setLayout(null);
 		settingButton();
-		//f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		//f.setVisible(true);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.setVisible(true);
 	}
 
 	public void chooseColorHinterground() {

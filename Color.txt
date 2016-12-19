@@ -1,8 +1,8 @@
 #FarbEigenschaften
-#Sun Dec 18 15:02:35 CET 2016
-hr=51
-hg=0
+#Mon Dec 19 00:11:27 CET 2016
+hr=255
+hg=51
 sr=255
 sg=255
-hb=255
-sb=51
+hb=51
+sb=0

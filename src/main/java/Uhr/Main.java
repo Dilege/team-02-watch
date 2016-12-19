@@ -2,6 +2,8 @@ package Uhr;
 
 import java.awt.EventQueue;
 
+import javax.swing.JTextField;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -16,13 +18,12 @@ public class Main {
 			    MemoryWindow.frm =frame;
 			    MemoryWindow.event();
 			    
-			    
-			    MemoryFarben.frm =frame;
-			    Farben.lab = StartStopp.timeF; 
+			    MemoryFarben.frm =frame;   
+			    Farben.lab = StartStopp.timeF;
 			    MemoryFarben.event();
 			    new Farben();
-			        
-					
+			 
+			    
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
