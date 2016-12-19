@@ -46,10 +46,9 @@ public class Gui extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);
 				getContentPane().removeAll();
-				// getContentPane().add(temporaryLostComponent, anchor,
-				// defaultCloseOperation);
 				
 				setTitle(null);
+				repaint();
 				SetUp set = new SetUp("Analog Watch", 400);
 				set.start();
 				repaint();
