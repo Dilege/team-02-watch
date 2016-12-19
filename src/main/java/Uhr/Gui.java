@@ -1,6 +1,8 @@
 package Uhr;
 
 import javax.swing.JFrame;
+
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JMenu;
@@ -8,10 +10,12 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 
 @SuppressWarnings("serial")
 public class Gui extends JFrame {
-	 
+	final Integer[] schriftgroesse = { 20, 24, 28, 32, 36, 40 };
+	int groesse = 18;
 	
 	public Gui() {
 
@@ -42,7 +46,8 @@ public class Gui extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Hintergrundfarbe auswaehlen");
 				Farben.chooseColorHinterground();
-				MemoryFarben.event();
+				MemoryFarben memory = new MemoryFarben(new JFrame());
+				memory.event();
 				
 		            }
 		        });
@@ -55,7 +60,8 @@ public class Gui extends JFrame {
 		writingColorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Farben.chooseColorSchrift();
-				MemoryFarben.event();
+				MemoryFarben memory = new MemoryFarben(new JFrame());
+				memory.event();
 			}
 		});
 		konfig.add(writingColorItem);
@@ -66,6 +72,8 @@ public class Gui extends JFrame {
 		writingSize.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Schriftgroesse auswaehlen");
+				
+				
 			}
 		});
 		konfig.add(writingSize);
@@ -108,16 +116,32 @@ public class Gui extends JFrame {
 		// STOPP Button
 		stoppButton.setBounds(229, 206, 195, 23);
 		getContentPane().add(stoppButton);
+		
 		stoppButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				startButton.setText("START");
 				stoppButton.setText("STOPP");
 				StartStopp.start();
-				
-
 			}
 		});
-
+		
+	/*	int[] liste = new int[10];
+		
+		liste[0]=50;
+		liste[1]=45;
+		liste[2]=40;
+		liste[3]=35;
+		liste[4]=30;
+		liste[5]=25;
+		liste[6]=20;
+		liste[7]=15;
+		liste[8]=10;
+		liste[9]=5;
+		}
+		
+	     JComboBox l=new JComboBox();
+		
+		comboBox.setBounds(342,0,102,20);
+		getContentPane().add(l);*/
 	}
-
 }

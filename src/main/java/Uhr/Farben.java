@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 public class Farben extends MemoryFarben {
 
 	static Color ausgewaehlteFarbe;
-	static JTextField lab = new JTextField();
+	static JTextField lab = StartStopp.timeF;
 	 
 
 	public Farben() {
@@ -51,4 +51,5 @@ public class Farben extends MemoryFarben {
 		lab.setForeground(c);
 
 	}
+	
 }
