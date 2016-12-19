@@ -92,7 +92,7 @@ Zum Starten der Uhr drücken Sie bitte auf Start. Sie können die Uhr mittels St
 
 Das Klassendiagramm:
 
-![webapps](doku/Class1.JPG)
+![webapps](doku/Class1.jpg)
 
 Für das Klassendiagramm haben wir am Anfang 4 Klassen. Eine Mainklasse sowie eine Klasse zum starten und stoppen der Uhr,
 zum Speichern der Positon des Fensters und eine die die Oberfläche bildet. 
