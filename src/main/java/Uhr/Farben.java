@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 public class Farben extends MemoryFarben {
 
 	static Color ausgewaehlteFarbe;
-	static JTextField lab;
+	static JTextField lab = new JTextField();
 	 
 
 	public Farben() {
