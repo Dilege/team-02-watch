@@ -10,6 +10,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 
@@ -17,7 +18,7 @@ import javax.swing.JComboBox;
 public class Gui extends JFrame {
 	final Integer[] schriftgroesse = { 20, 24, 28, 32, 36, 40 };
 	int groesse = 18;
-	
+
 	public Gui() {
 
 		// Frame
@@ -26,7 +27,9 @@ public class Gui extends JFrame {
 		setTitle("The Watch");
 		// setLocationRelativeTo(null);
 		getContentPane().setLayout(null);
-		setResizable(true);
+
+		setResizable(false);
+
 
 		// Menu Einstellungen
 		JMenuBar menuBar = new JMenuBar();
@@ -43,15 +46,18 @@ public class Gui extends JFrame {
 		JMenuItem analogue = new JMenuItem("Analoguhr starten");
 		ana.add(analogue);
 		analogue.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e){
-			    setVisible(false); 
+			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
 				getContentPane().removeAll();
-				//getContentPane().add(temporaryLostComponent, anchor, defaultCloseOperation);
+				
+				setTitle(null);
+				repaint();
 				SetUp set = new SetUp("Analog Watch", 400);
-			     set.start();
-			     repaint();
-			     setVisible(true); 
-			}});
+				set.start();
+				repaint();
+				setVisible(true);
+			}
+		});
 
 		// Unter-Menu Hintergrundfarbe
 		JMenuItem BackgroundColorItem = new JMenuItem("Hintergrundfarbe");
@@ -61,13 +67,12 @@ public class Gui extends JFrame {
 				Farben.chooseColorHinterground();
 				MemoryFarben memory = new MemoryFarben(new JFrame());
 				memory.event();
-				
-		            }
-		        });
+
+			}
+		});
 		konfig.add(BackgroundColorItem);
-		Farben.hintergrundFarbe=Farben.hcolor;
-	
-		
+		Farben.hintergrundFarbe = Farben.hcolor;
+
 		// Unter-Menu Schriftfarbe
 		JMenuItem writingColorItem = new JMenuItem("Schriftfarbe");
 		writingColorItem.addActionListener(new ActionListener() {
@@ -78,19 +83,18 @@ public class Gui extends JFrame {
 			}
 		});
 		konfig.add(writingColorItem);
-		Farben.schriftFarbe=Farben.scolor;
+		Farben.schriftFarbe = Farben.scolor;
 
 		// Unter-Menu Schriftgroesse
 		JMenuItem writingSize = new JMenuItem("Schriftgroesse");
 		writingSize.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Schriftgroesse auswaehlen");
-				
-				
+
 			}
 		});
 		konfig.add(writingSize);
-		
+
 		// Unter-Menu Zeitzone Europe
 		JMenuItem europe = new JMenuItem("Europa/Paris");
 		europe.addActionListener(new ActionListener() {
@@ -101,15 +105,14 @@ public class Gui extends JFrame {
 		zz.add(europe);
 
 		// Unter-Menu Zeitzone Europe
-				JMenuItem amerika = new JMenuItem("Amerika/Boston");
-				europe.addActionListener(new ActionListener() {
-					public void actionPerformed(ActionEvent e) {
-						System.out.println("Zeitzone Boston:");
-					}
-				});
-				zz.add(amerika);
-				
-				
+		JMenuItem amerika = new JMenuItem("Amerika/Boston");
+		europe.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Zeitzone Boston:");
+			}
+		});
+		zz.add(amerika);
+
 		// START- STOPP Buttons
 		final JButton startButton = new JButton("START");
 		final JButton stoppButton = new JButton("STOPP");
@@ -129,7 +132,7 @@ public class Gui extends JFrame {
 		// STOPP Button
 		stoppButton.setBounds(229, 206, 195, 23);
 		getContentPane().add(stoppButton);
-		
+
 		stoppButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				startButton.setText("START");
@@ -137,24 +140,16 @@ public class Gui extends JFrame {
 				StartStopp.start();
 			}
 		});
-		
-	/*	int[] liste = new int[10];
-		
-		liste[0]=50;
-		liste[1]=45;
-		liste[2]=40;
-		liste[3]=35;
-		liste[4]=30;
-		liste[5]=25;
-		liste[6]=20;
-		liste[7]=15;
-		liste[8]=10;
-		liste[9]=5;
-		}
-		
-	     JComboBox l=new JComboBox();
-		
-		comboBox.setBounds(342,0,102,20);
-		getContentPane().add(l);*/
+
+		/*
+		 * int[] liste = new int[10];
+		 * 
+		 * liste[0]=50; liste[1]=45; liste[2]=40; liste[3]=35; liste[4]=30;
+		 * liste[5]=25; liste[6]=20; liste[7]=15; liste[8]=10; liste[9]=5; }
+		 * 
+		 * JComboBox l=new JComboBox();
+		 * 
+		 * comboBox.setBounds(342,0,102,20); getContentPane().add(l);
+		 */
 	}
 }

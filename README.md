@@ -50,6 +50,7 @@ Dieses Git- Repository enstand im Rahmen  der Kurse Software Engieering und Prog
 ## Ziele
 
 Ziel ist es die in den Kursen erlenten Fähigkeiten und Kompetenzen innerhalb eines einzig Projektes zu beweisen.
+Dazu sollen wir in einem Team eine Uhr mit verschiedenen Funktionen und Eigenschaften programmieren. 
 
 ## Randbedingungen
 
