@@ -19,7 +19,7 @@ public class MemoryFarben {
 	static Color schriftFarbe;
 	static Color hcolor;
 	static Color scolor;
-	static File file = new File("Color.txt");
+	static File file = new File("SetColor.txt");
 	static Properties p = new Properties();
 	protected static JFrame frm;
 
@@ -76,7 +76,7 @@ public class MemoryFarben {
 			}
 		});
 
-		File colorFile = new File("Color.txt");
+		File colorFile = new File("SetColor.txt");
 		if (colorFile.exists()) {
 			try {
 				restoreFile(frm);
