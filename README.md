@@ -92,11 +92,15 @@ Zum Starten der Uhr drücken Sie bitte auf Start. Sie können die Uhr mittels St
 
 Das Klassendiagramm:
 
-![webapps](doku/uhrprojekt_uml Class diagram.PNG)
+![webapps](doku/Class1.JPG)
+
+Für das Klassendiagramm haben wir am Anfang 4 Klassen. Eine Mainklasse sowie eine Klasse zum starten und stoppen der Uhr,
+zum Speichern der Positon des Fensters und eine die die Oberfläche bildet. 
 
 Das Sequenzdiagramm:
 
 ![webapps](doku/Sequenz1.png)
+
 
 #### Dokumentation wichtiger Code Snippets
 Unser Mainprogram: 
