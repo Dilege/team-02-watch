@@ -28,12 +28,12 @@ import javax.swing.JLabel;
  * @author Ian Darwin
  * @version $Id: FontChooser.java,v 1.19 2004/03/20 20:44:56 ian Exp $
  */
-public class JavaDialogSchriftgroesse extends JDialog {
+public class Schriftgroesse extends JDialog {
 
   // Results:
 
   /** The font the user has chosen */
-  protected Font resultFont;
+  protected static Font resultFont;
 
   /** The resulting font name */
   protected String resultName;
@@ -81,7 +81,7 @@ public class JavaDialogSchriftgroesse extends JDialog {
    * Construct a FontChooser -- Sets title and gets array of fonts on the
    * system. Builds a GUI to let the user choose one font at one size.
    */
-  public JavaDialogSchriftgroesse(Frame f) {
+  public Schriftgroesse(Frame f) {
     super(f, "Font Chooser", true);
 
     Container cp = getContentPane();
@@ -205,10 +205,12 @@ public class JavaDialogSchriftgroesse extends JDialog {
     return resultFont;
   }
 
+  
   /** Simple main program to start it running */
+  /*
   public static void main(String[] args) {
     final JFrame f = new JFrame("FontChooser Startup");
-    final JavaDialogSchriftgroesse fc = new JavaDialogSchriftgroesse(f);
+    final Schriftgroesse fc = new Schriftgroesse(f);
     final Container cp = f.getContentPane();
     cp.setLayout(new GridLayout(0, 1)); // one vertical column
 
@@ -233,5 +235,6 @@ public class JavaDialogSchriftgroesse extends JDialog {
     f.setSize(150, 100);
     f.setVisible(true);
     f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-  }
+  } 
+  */
 }
