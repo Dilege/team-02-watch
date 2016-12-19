@@ -147,7 +147,7 @@ s
 ## Dokumentation Sprint 3
 #### Taskliste der User Stories
 
-![webapps](doku\Task3.PNG))
+![webapps](doku\Task3.PNG)
 
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
