@@ -2,7 +2,7 @@ package Uhr;
 
 import javax.swing.JFrame;
 
-import java.awt.Frame;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JMenu;
@@ -10,10 +10,12 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 
 @SuppressWarnings("serial")
 public class Gui extends JFrame {
-	 
+	final Integer[] schriftgroesse = { 20, 24, 28, 32, 36, 40 };
+	int groesse = 18;
 	
 	public Gui() {
 
@@ -35,31 +37,8 @@ public class Gui extends JFrame {
 		JMenu zz = new JMenu("ZeitZonen");
 		menuBar.add(zz);
 		// Menu Analogue Uhr
-		
-		JMenu ana=new JMenu("Analoguhr");
-		menuBar.add(ana);
-		JMenuItem analogue = new JMenuItem("Analoguhr starten");
-		ana.add(analogue);
-		analogue.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e){
-			    setVisible(false); 
-				getContentPane().removeAll();
-				//getContentPane().add(temporaryLostComponent, anchor, defaultCloseOperation);
-				SetUp set = new SetUp("Analog Watch", 400);
-			     set.start();
-			     repaint();
-			     setVisible(true); 
-			     
-			     
-			
-			       
-			}
-
-			
-
-					
-			
-		});
+		JMenu analogue = new JMenu("AnalogUhr");
+		menuBar.add(analogue);
 
 		// Unter-Menu Hintergrundfarbe
 		JMenuItem BackgroundColorItem = new JMenuItem("Hintergrundfarbe");
@@ -67,7 +46,8 @@ public class Gui extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Hintergrundfarbe auswaehlen");
 				Farben.chooseColorHinterground();
-				MemoryFarben.event();
+				MemoryFarben memory = new MemoryFarben(new JFrame());
+				memory.event();
 				
 		            }
 		        });
@@ -145,8 +125,6 @@ public class Gui extends JFrame {
 			}
 		});
 		
-	
-		
 	/*	int[] liste = new int[10];
 		
 		liste[0]=50;
@@ -166,5 +144,4 @@ public class Gui extends JFrame {
 		comboBox.setBounds(342,0,102,20);
 		getContentPane().add(l);*/
 	}
-
 }
