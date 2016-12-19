@@ -89,6 +89,11 @@ Zum Starten der Uhr drücken Sie bitte auf Start. Sie können die Uhr mittels St
 
 
 #### UML Klassen- und Sequenzdiagramme
+
+Das Klassendiagramm:
+
+![webapps](doku/uhrprojekt_uml Class diagram.PNG)
+
 #### Dokumentation wichtiger Code Snippets
 Unser Mainprogram: 
 
@@ -106,9 +111,7 @@ Die Klasse zum starten der Uhr:
 
 ![webapps](doku/startclass.PNG)
 
-Die Klasse zum stoppen der Uhr:
-
-![webapps](doku/stoppclass.PNG)
+Die Klasse zum stoppen der Uhr ist ählich aufgebaut wie die Startklasse.
 
 Um die Positon des Fensters zu speichern haben wir uns fogendes überlegt:
 
