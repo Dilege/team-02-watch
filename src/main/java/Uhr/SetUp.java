@@ -1,12 +1,11 @@
 package Uhr;
-
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.image.BufferStrategy;
 
-public class SetUp extends Memory implements Runnable {
+public class SetUp implements Runnable {
 
 	private String title;
 	private int size;
@@ -15,7 +14,8 @@ public class SetUp extends Memory implements Runnable {
 
 	private BufferStrategy buffer;
 	private Graphics2D g;
-
+	static Color farbe;
+	
 	public SetUp(String title, int size) {
 		this.title = title;
 		this.size = size;
@@ -37,11 +37,16 @@ public class SetUp extends Memory implements Runnable {
 
 		// Zeichnet einen Schwarzen Kreis im Fenster und Zeichnet einen Weissen
 		// Kreis im Schwarzen Kreis
-		g.setColor(Color.black);
+		/*
+		SetAuswahl.graph=g;
+		SetAuswahl.buffer=buffer;
+		SetAuswahl.s=size;
+		SetAuswahl.ListenderRund();
+		*/
+        g.setColor(Color.black);
 		g.fillOval(10, 10, size - 20, size - 20);
 		g.setColor(Color.white);
 		g.fillOval(20, 20, size - 40, size - 40);
-
 		// Configuration der Zahlen und minuten Striche
 		int angleX, angleY;
 		int radius;
@@ -54,7 +59,7 @@ public class SetUp extends Memory implements Runnable {
 			radius = center - 60;
 			angleX = (int) ((center) + (Math.sin(position) * radius));
 			angleY = (int) ((center) - (Math.cos(position) * radius));
-			g.setColor(Color.blue);
+			g.setColor(farbe);
 			g.setFont(new Font("arial", Font.BOLD, 25));
 			String a = Integer.toString(i);
 			g.drawString(a, angleX, angleY);
@@ -84,7 +89,7 @@ public class SetUp extends Memory implements Runnable {
 		angleX = (int) ((center) + (Math.sin(time) * radius));
 		angleY = (int) ((center) - (Math.cos(time) * radius));
 		g.setColor(Color.black);
-		g.setStroke(new BasicStroke(8));
+		g.setStroke(new BasicStroke(6));
 		g.drawLine(center, center, angleX, angleY);
 		g.setStroke(new BasicStroke(0));
 
@@ -95,7 +100,7 @@ public class SetUp extends Memory implements Runnable {
 		angleX = (int) ((center) + (Math.sin(time) * radius));
 		angleY = (int) ((center) - (Math.cos(time) * radius));
 		g.setColor(Color.black);
-		g.setStroke(new BasicStroke(5));
+		g.setStroke(new BasicStroke(4));
 		g.drawLine(center, center, angleX, angleY);
 		g.setStroke(new BasicStroke(0));
 
@@ -108,7 +113,7 @@ public class SetUp extends Memory implements Runnable {
 		g.drawLine(center, center, angleX, angleY);
 
 		// Centrale Punkt
-		g.setColor(Color.blue);
+		g.setColor(farbe);
 		g.fillOval(center - 7, center - 7, 14, 14);
 
 		// Anzeigen der Uhr

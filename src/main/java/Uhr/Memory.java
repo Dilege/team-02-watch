@@ -1,5 +1,4 @@
 package Uhr;
-
 import java.awt.Color;
 import java.awt.Frame;
 import java.awt.event.WindowAdapter;
@@ -11,6 +10,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Properties;
+
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 
@@ -20,11 +20,11 @@ public class Memory {
 	static Color schriftFarbe;
 	static Color hcolor;
 	static Color scolor;
-	static File file = new File("setDigi.txt");
+	static File file = new File("setAnalog.txt");
 	static Properties p = new Properties();
 	static JFrame frm;
 
-	public static void storeFile(Frame f1) throws IOException {
+	public static void storeFile(JFrame f1) throws IOException {
         //Hintergroundfarben in den Variablen hr,hg und hb speichern
 		int hr = hintergrundFarbe.getRed();
 		int hg = hintergrundFarbe.getGreen();
@@ -63,33 +63,5 @@ public class Memory {
 
 	}
 
-	public static void event() {
-		frm.addWindowListener(new WindowAdapter() {
-
-			public void windowClosing(WindowEvent we) {
-
-				try {
-					storeFile(frm);
-				} catch (Exception e) {
-
-					e.printStackTrace();
-				}
-
-				System.exit(0);
-			}
-		});
-
-		File colorFile = new File("setDigi.txt");
-		if (colorFile.exists()) {
-			try {
-				restoreFile(frm);
-			} catch (Exception e) {
-
-				e.printStackTrace();
-			}
-
-		} else {
-			frm.setLocationByPlatform(true);
-		}
-	}
+	
 }
