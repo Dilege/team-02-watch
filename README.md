@@ -94,6 +94,10 @@ Das Klassendiagramm:
 
 ![webapps](doku/uhrprojekt_uml Class diagram.PNG)
 
+Das Sequenzdiagramm:
+
+![webapps](doku/Sequenz1.png)
+
 #### Dokumentation wichtiger Code Snippets
 Unser Mainprogram: 
 
