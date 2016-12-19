@@ -18,7 +18,8 @@ public class Main {
 				//SetUp set = new SetUp("Analog Watch", 400);
 			    //set.start();
 			    frame.setVisible(true);
-			    frame.pack();
+			    frame.pack(); 
+			   
 			    MemoryWindow.frm =frame;
 			    MemoryWindow.event();
 			    

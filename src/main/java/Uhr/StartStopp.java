@@ -19,7 +19,7 @@ public class StartStopp extends Gui {
 		timeF = new JTextField(10);
 		timeF.setVisible(true);
 		timeF.setBounds(74, 61, 290, 80);
-		// timeF.setForeground(MemoryFarben.schriftFarbe);
+		timeF.setForeground(MemoryFarben.schriftFarbe);
 		// timeF.setFont(new Font("Arial", Font.HANGING_BASELINE, 48));
 		timeF.setFont(new Font("Arial", Font.HANGING_BASELINE, 48));
 		timeF.setEditable(false);

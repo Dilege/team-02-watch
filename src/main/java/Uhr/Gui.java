@@ -27,7 +27,7 @@ public class Gui extends JFrame {
 		setTitle("The Watch");
 		//setLocationRelativeTo(null);
 		getContentPane().setLayout(null);
-		setResizable(false);
+		setResizable(true);
 		
 		// Menu Einstellungen
 		JMenuBar menuBar = new JMenuBar();
