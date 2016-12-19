@@ -20,15 +20,14 @@ public class Gui extends JFrame {
 	
 	public Gui() {
 
-		
 		// Frame
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		setTitle("The Watch");
-		//setLocationRelativeTo(null);
+		// setLocationRelativeTo(null);
 		getContentPane().setLayout(null);
 		setResizable(true);
-		
+
 		// Menu Einstellungen
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
@@ -37,9 +36,9 @@ public class Gui extends JFrame {
 		// Menu ZeitZonen
 		JMenu zz = new JMenu("ZeitZonen");
 		menuBar.add(zz);
- 		// Menu Analogue Uhr
-		
-		JMenu ana=new JMenu("Analoguhr");
+		// Menu Analogue Uhr
+
+		JMenu ana = new JMenu("Analoguhr");
 		menuBar.add(ana);
 		JMenuItem analogue = new JMenuItem("Analoguhr starten");
 		ana.add(analogue);
