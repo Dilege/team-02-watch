@@ -14,6 +14,9 @@ public class Main {
 				try {
 					
 				Gui frame = new Gui();
+								
+				//SetUp set = new SetUp("Analog Watch", 400);
+			    //set.start();
 			    frame.setVisible(true);
 			    MemoryWindow.frm =frame;
 			    MemoryWindow.event();
