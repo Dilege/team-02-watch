@@ -26,10 +26,6 @@ public class Main {
 			    myMemory.event();
 			    
 			    new Farben();
-			 
-			   
-			
-			    
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
