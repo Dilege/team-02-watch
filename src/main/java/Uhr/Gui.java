@@ -36,9 +36,22 @@ public class Gui extends JFrame {
 		// Menu ZeitZonen
 		JMenu zz = new JMenu("ZeitZonen");
 		menuBar.add(zz);
-		// Menu Analogue Uhr
-		JMenu analogue = new JMenu("AnalogUhr");
-		menuBar.add(analogue);
+ 		// Menu Analogue Uhr
+		
+		JMenu ana=new JMenu("Analoguhr");
+		menuBar.add(ana);
+		JMenuItem analogue = new JMenuItem("Analoguhr starten");
+		ana.add(analogue);
+		analogue.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e){
+			    setVisible(false); 
+				getContentPane().removeAll();
+				//getContentPane().add(temporaryLostComponent, anchor, defaultCloseOperation);
+				SetUp set = new SetUp("Analog Watch", 400);
+			     set.start();
+			     repaint();
+			     setVisible(true); 
+			}});
 
 		// Unter-Menu Hintergrundfarbe
 		JMenuItem BackgroundColorItem = new JMenuItem("Hintergrundfarbe");
