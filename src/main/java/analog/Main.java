@@ -1,6 +1,6 @@
 package analog;
 
-
+import Uhr.SetUp;
 
 public class Main  {
    
