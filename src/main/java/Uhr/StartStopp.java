@@ -38,10 +38,12 @@ public class StartStopp extends Gui {
 	         Timer t = new Timer(1000, new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					Calendar jetzt = Calendar.getInstance();
-					int stunde = jetzt.get(Calendar.HOUR_OF_DAY);
-					int min = jetzt.get(Calendar.MINUTE);
-					int sec = jetzt.get(Calendar.SECOND); 
-				    timeF.setText( stunde + ":" + min + ":" + sec);
+					//int stunde = jetzt.get(Calendar.HOUR_OF_DAY);
+					//int min = jetzt.get(Calendar.MINUTE);
+					//int sec = jetzt.get(Calendar.SECOND);
+					//String text = String.format("%2d:%2d:%2d",stunde,min,sec);
+					String text = String.format("%5tT", jetzt);
+				    timeF.setText(text);
 		
 				}
 				});
@@ -55,11 +57,13 @@ public class StartStopp extends Gui {
 	        
 			Timer t = new Timer(1000, new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					Calendar jetzt = Calendar.getInstance();
-					int stunde = jetzt.get(Calendar.HOUR_OF_DAY);
-					int min = jetzt.get(Calendar.MINUTE);
-					int sec = jetzt.get(Calendar.SECOND);
-					timeF.setText(+stunde + ":" + min + ":" + sec);
+//					Calendar jetzt = Calendar.getInstance();
+//					//int stunde = jetzt.get(Calendar.HOUR_OF_DAY);
+//					//int min = jetzt.get(Calendar.MINUTE);
+//					//int sec = jetzt.get(Calendar.SECOND);
+//					//timeF.setText(+stunde + ":" + min + ":" + sec);
+//					String text = String.format("%5tT", jetzt);
+//				    timeF.setText(text);
 				}
 			});
 			t.stop();
