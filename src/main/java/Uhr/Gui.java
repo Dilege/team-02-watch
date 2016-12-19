@@ -111,8 +111,8 @@ public class Gui extends JFrame {
 		stoppButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				startButton.setText("START");
-				stoppButton.setText("finish");
-				StartStopp.stopp();
+				stoppButton.setText("STOPP");
+				StartStopp.start();
 				
 
 			}
