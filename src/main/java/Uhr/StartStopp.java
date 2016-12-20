@@ -16,7 +16,7 @@ public class StartStopp extends Gui {
 	public static void start() {
 
 		// UhrText Einstellungen
-		//timeF = new JTextField(10);
+		timeF = new JTextField(10);
 		//timeF.setVisible(true);
 		timeF.setBounds(74, 61, 290, 80);
 		//timeF.setForeground(MemoryFarben.schriftFarbe);

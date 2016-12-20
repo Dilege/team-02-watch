@@ -125,6 +125,9 @@ public class Gui extends JFrame {
 				StartStopp.start();
 				getContentPane().add(StartStopp.timeF);
 				StartStopp.timeF.setVisible(true);
+				StartStopp.timeF.setForeground(Dialog.schriftFarbe); 
+				StartStopp.timeF.setBackground(Dialog.hintergrundFarbe);
+				
 			}
 		});
 
