@@ -36,18 +36,7 @@ public class Gui extends SetUpMemory {
 	// Frame
 	public void Fenster() {
 		
-		//frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		frame.addWindowListener(new WindowAdapter(){
-			@Override
-			public void windowClosing(WindowEvent evt){
-				frame.dispose();
-			}
-			@Override
-			public void windowClosed(WindowEvent evt){
-				System.out.println("closed");
-			}
-		});
-
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.setBounds(100, 100, 400, 400);
 		frame.setTitle("The Watch");
 		button();
@@ -103,6 +92,7 @@ public class Gui extends SetUpMemory {
 			public void actionPerformed(ActionEvent e) {
 				startButton.setText("Go!");
 				stoppButton.setText("STOP");
+				StartStopp.Uhr();
 		        StartStopp.start();
 		        
 				

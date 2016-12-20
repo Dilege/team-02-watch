@@ -54,8 +54,14 @@ public class StartStopp extends Gui {
 				System.out.println(farbeHintergrung);
 				start();
 				restore();
-				timeF.setForeground(scolor);
-			    timeF2.setForeground(scolor);
+				if (farbeSchrift==null){
+					timeF.setForeground(scolor);
+		        timeF2.setForeground(scolor);
+				}
+				else{
+					timeF.setForeground(farbeSchrift);
+			        timeF2.setForeground(farbeSchrift);
+				}
 				
 				//timeF.setVisible(true);
 				//timeF2.setVisible(true);
