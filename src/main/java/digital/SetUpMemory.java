@@ -20,7 +20,7 @@ public class SetUpMemory extends Memory{
 					e.printStackTrace();
 				}
 
-				System.exit(0);
+				//System.exit(0);
 			}
 		});
 

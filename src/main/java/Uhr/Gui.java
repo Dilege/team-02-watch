@@ -11,10 +11,10 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
+import digital.StartStopp;
+
 @SuppressWarnings("serial")
 public class Gui extends JFrame {
-	final Integer[] schriftgroesse = { 20, 24, 28, 32, 36, 40 };
-	int groesse = 18;
 
 	public Gui() {
 
@@ -59,42 +59,32 @@ public class Gui extends JFrame {
 		
 		// Menu 2 Uhren
 
-				JMenu AnzahlUhren = new JMenu("Anzahl Uhren");
-				menuBar.add(AnzahlUhren);
+				JMenu digitalUhren = new JMenu("Digitale Uhren");
+				menuBar.add(digitalUhren);
 				
 				JMenuItem einUhren = new JMenuItem("Eine Uhr");
-				AnzahlUhren.add(einUhren);
+				digitalUhren.add(einUhren);
 			      einUhren.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						setVisible(false);
-						getContentPane().removeAll();
-						
+						//setVisible(false);
+						//getContentPane().removeAll();	
 						//setTitle(null);
 						//repaint();
-						//digital.Gui version2 = new digital.Gui();
-						
+						//digital.Gui version2 = new digital.Gui();	
 						///Main.main(null);
-						digital.Gui gui = new digital.Gui();
-						gui.getFrame().addWindowListener(new WindowAdapter(){
-							@Override
-							public void windowClosed(WindowEvent evt){
-								repaint();
-							}
-						});
-						//SetUp set = new SetUp("Analog Watch", 400);
-						//set.start();
-						//repaint();
-						setVisible(true);
+						digital.Main.main(null);
+						digital.StartStopp.timeF2.setVisible(false);
+						digital.StartStopp.timeF.setBounds(100, 70, 180, 60);
+						
 					}
-				});
+					});
 				
 				JMenuItem zweiUhren = new JMenuItem("Zwei Uhren");
-				AnzahlUhren.add(zweiUhren);
+				digitalUhren.add(zweiUhren);
 				zweiUhren.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						setVisible(false);
-						getContentPane().removeAll();
-						
+						//setVisible(false);
+						//getContentPane().removeAll();	
 						//setTitle(null);
 						//repaint();
 						//digital.Gui version2 = new digital.Gui();
@@ -102,7 +92,7 @@ public class Gui extends JFrame {
 						//SetUp set = new SetUp("Analog Watch", 400);
 						//set.start();
 						//repaint();
-						setVisible(true);
+						//setVisible(true);
 					}
 				});
 
@@ -144,30 +134,12 @@ public class Gui extends JFrame {
 		});
 		konfig.add(writingSize);
 
-		// Unter-Menu Zeitzone Europe
-		JMenuItem europe = new JMenuItem("Europa/Paris");
-		europe.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				System.out.println("Zeitzone Paris:");
-			}
-		});
-		zz.add(europe);
-
-		// Unter-Menu Zeitzone Europe
-		JMenuItem amerika = new JMenuItem("Amerika/Boston");
-		europe.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				System.out.println("Zeitzone Boston:");
-			}
-		});
-		zz.add(amerika);
-
 		// START- STOPP Buttons
 		final JButton startButton = new JButton("START");
 		final JButton stoppButton = new JButton("STOPP");
 
 		// START Button
-		startButton.setBounds(10, 206, 202, 23);
+		/*startButton.setBounds(10, 206, 202, 23);
 		getContentPane().add(startButton);
 		startButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -192,17 +164,7 @@ public class Gui extends JFrame {
 				stoppButton.setText("STOPP");
 				StartStopp.start();
 			}
-		});
+		});*/
 
-		/*
-		 * int[] liste = new int[10];
-		 * 
-		 * liste[0]=50; liste[1]=45; liste[2]=40; liste[3]=35; liste[4]=30;
-		 * liste[5]=25; liste[6]=20; liste[7]=15; liste[8]=10; liste[9]=5; }
-		 * 
-		 * JComboBox l=new JComboBox();
-		 * 
-		 * comboBox.setBounds(342,0,102,20); getContentPane().add(l);
-		 */
 	}
 }

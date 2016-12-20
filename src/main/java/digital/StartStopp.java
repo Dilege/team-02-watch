@@ -19,8 +19,8 @@ import javax.swing.JSpinner;
 public class StartStopp extends Gui {
 	
 		private static final long serialVersionUID = 1L;
-		 static  JTextField timeF = new JTextField();
-		 static  JTextField timeF2 = new JTextField();
+		 public static  JTextField timeF = new JTextField();
+		 public static  JTextField timeF2 = new JTextField();
 		 static Color farbeSchrift;
 		 static Color farbeHintergrung;
 		 static Timer t ;

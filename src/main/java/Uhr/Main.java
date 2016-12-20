@@ -16,7 +16,7 @@ public class Main {
 			    //set.start();
 			    frame.setVisible(true);
 			    //frame.pack(); 
-			  // digital.Gui version2 = new digital.Gui();
+			  //digital.Gui version2 = new digital.Gui();
 			   //digital.Main.main(args);
 			   
 			    MemoryWindow.frm =frame;
