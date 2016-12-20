@@ -149,15 +149,23 @@ Alle Testversuche waren erfolgreich.
 ![webapps](doku/Task2.PNG)
 
 #### UML Klassen- und Sequenzdiagramme
+
+![webapps](doku/Class2.jpg)
+
+
+![webapps](doku/Sequenz2.jpg)
+
+
+
 #### Dokumentation wichtiger Code Snippets
 
-Der Fokus in diesem Sprint lag auf dem erstellen der Farbauswahl für Schrift- und Hintergrund, sowie die Schriftgröße.
-Dementsprechend sind alle neuen Klassen recht ählich. Hier unten beispielhaft die Klasse zur Hintergrundsauswahl: 
+Der Fokus in diesem Sprint lag auf dem erstellen der Farbauswahl für Schrift- und Hintergrundfarbe.
+
+Dementsprechend sind alle neuen Klassen und Methoden recht ählich. Hier unten beispielhaft die Methode zur Hintergrundsauswahl: 
 
 ![webapps](doku/Farbe.PNG)
 
-![webapps](doku/Farbe2.PNG)
-s
+
 #### Testfaelle bedingt durch Akzeptanzkritierium
 ######Testfälle:
 
