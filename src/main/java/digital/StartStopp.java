@@ -49,12 +49,19 @@ public class StartStopp extends Gui {
       
      
 		 public static void Uhr(){
-			 timeF.setBackground(farbeHintergrung);
-				timeF2.setBackground(farbeHintergrung);
+			 if (farbeHintergrung==null){
+				 timeF.setBackground(hcolor);
+					timeF2.setBackground(hcolor);
+				}
+				else{
+					timeF.setBackground(farbeHintergrung);
+					timeF2.setBackground(farbeHintergrung);
+				}
+			 
 			   frame.getContentPane().add(StartStopp.timeF);
 			   frame.getContentPane().add(StartStopp.timeF2);
-				System.out.println(farbeSchrift);
-				System.out.println(farbeHintergrung);
+				//System.out.println(farbeSchrift);
+				//System.out.println(farbeHintergrung);
 				start();
 				restore();
 				if (farbeSchrift==null){
@@ -69,8 +76,15 @@ public class StartStopp extends Gui {
 				timeF.setBounds(10, 10, 180, 60);
 				timeF2.setBounds(200, 10, 180, 60);
 				//timeF.setForeground(MemoryFarben.schriftFarbe);
-				timeF.setFont(font);
-				timeF2.setFont(font);
+				if (fnt==null){
+					timeF.setFont(schFont);
+					timeF2.setFont(schFont);
+				}
+				else{
+				timeF.setFont(fnt);
+				timeF2.setFont(fnt);
+				}
+				
 		        timeF.setEditable(false);
 		        timeF2.setEditable(false);
 		        timeF.setHorizontalAlignment(JTextField.CENTER);

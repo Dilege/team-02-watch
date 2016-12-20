@@ -49,11 +49,10 @@ public class SetUpMemory extends Memory{
 			int sr = 150;
 			int sg = 10;
 			int sb = 60;
-		/*	//Defautl position
-			int x=100;
-			int y=100;
-			int b=400;
-			int h=400;*/
+			String sch="Arial";
+			int art=1;
+			int size=30;
+			
 			//Die ganzen Variablen in den "Properties p " speichern
 			p.setProperty("hr", "" + hr);
 			p.setProperty("hg", "" + hg);
@@ -61,7 +60,9 @@ public class SetUpMemory extends Memory{
 			p.setProperty("sr", "" + sr);
 			p.setProperty("sg", "" + sg);
 			p.setProperty("sb", "" + sb);
-			
+			p.setProperty("sch", "" + sch);
+	        p.setProperty("art", "" + art);
+	        p.setProperty("size", "" + size);
 			BufferedWriter color;
 			try {
 				color = new BufferedWriter(new FileWriter(file));

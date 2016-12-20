@@ -1,8 +1,11 @@
 #FarbEigenschaften
-#Tue Dec 20 23:04:17 CET 2016
-hr=0
-hg=0
+#Wed Dec 21 00:20:09 CET 2016
+sch=Arial Rounded MT Bold
 sr=255
-sg=0
-hb=204
+hg=0
+art=0
+sg=255
+hb=255
 sb=255
+hr=153
+size=30

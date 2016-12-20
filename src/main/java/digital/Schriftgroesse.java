@@ -140,15 +140,15 @@ public class Schriftgroesse extends JDialog {
       }
     });
 
-    JButton pvButton = new JButton("Preview");
+   /* JButton pvButton = new JButton("Preview");
     bot.add(pvButton);
     pvButton.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         previewFont();
       }
-    });
+    });*/
 
-    JButton canButton = new JButton("Cancel");
+    JButton canButton = new JButton("Default");
     bot.add(canButton);
     canButton.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {

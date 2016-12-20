@@ -1,4 +1,5 @@
 package digital;
+
 import javax.swing.JFrame;
 
 import java.awt.Color;
@@ -59,19 +60,21 @@ public class Gui extends SetUpMemory {
 		StartStopp.farbeHintergrung=hintergrundFarbe;
 	}
 	public void schriftgroesse(){
+		
 		Schriftgroesse.f=frame;
 		final Schriftgroesse fc = new Schriftgroesse(frame);
 		menuSchriftGreosse.addActionListener(new ActionListener() {
 		      public void actionPerformed(ActionEvent e) {
 		        fc.setVisible(true);
-		        Font f=new Font("Arial",Font.HANGING_BASELINE,30);
-		        System.out.println(f);
 		        font = fc.getSelectedFont();
-		        System.out.println("You chose " + font); 
+		        fnt=font;
+		        //System.out.println("You chose " + font); 
 		        fc.dispose();
+		        store();
 		        StartStopp.Uhr();
 		      }
 		    });
+		
 	}
 
 	// Menu Einstellungen
@@ -89,6 +92,7 @@ public class Gui extends SetUpMemory {
 			menuHintergrund.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent arg0) {
 					chooseColorHinterground();
+					StartStopp.Uhr();
 					store();
 				}
 				
