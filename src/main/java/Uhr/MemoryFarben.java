@@ -26,9 +26,9 @@ public class MemoryFarben {
 	public MemoryFarben() {}
 	
 	public MemoryFarben(JFrame frm) {
-		this.file = new File("SetColor.txt");
-		this.p = new Properties();
-		this.frm = frm;
+		MemoryFarben.file = new File("SetColor.txt");
+		MemoryFarben.p = new Properties();
+		MemoryFarben.frm = frm;
 	}
 
 	public static void storeFile(Frame f1) throws IOException {

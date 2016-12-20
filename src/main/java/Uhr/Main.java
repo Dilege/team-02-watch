@@ -1,9 +1,6 @@
 package Uhr;
 
 import java.awt.EventQueue;
-import java.awt.Font;
-
-import javax.swing.JTextField;
 
 public class Main {
 
@@ -18,7 +15,8 @@ public class Main {
 				//SetUp set = new SetUp("Analog Watch", 400);
 			    //set.start();
 			    frame.setVisible(true);
-			    frame.pack();
+			    //frame.pack(); 
+			   
 			    MemoryWindow.frm =frame;
 			    MemoryWindow.event();
 			    
@@ -28,7 +26,7 @@ public class Main {
 			    MemoryFarben myMemory = new MemoryFarben(frame);
 			    myMemory.event();
 			    
-			    new Farben();
+			   // new Farben();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

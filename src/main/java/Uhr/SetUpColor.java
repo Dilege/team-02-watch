@@ -1,4 +1,4 @@
-package AnalogUhrFertig;
+package Uhr;
 import java.awt.Canvas;
 import java.awt.Color;
 import java.awt.event.ActionEvent;

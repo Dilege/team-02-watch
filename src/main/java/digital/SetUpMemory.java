@@ -1,4 +1,4 @@
-package AnalogUhrFertig;
+package digital;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.BufferedWriter;
@@ -27,7 +27,7 @@ public class SetUpMemory extends Memory{
 		
 	}
 	public static void restore(){
-		File colorFile = new File("setAnalog.txt");
+		File colorFile = new File("setDigi.txt");
 		if (colorFile.exists()) {
 			try {
 				restoreFile(frm);

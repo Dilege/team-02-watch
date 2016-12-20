@@ -1,31 +1,22 @@
 package Uhr;
 
 import java.awt.Color;
-import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Properties;
 
 import javax.swing.JButton;
 import javax.swing.JColorChooser;
-import javax.swing.JDialog;
 import javax.swing.JFrame;
-// Import-Anweisung f�r unser JLabel 
-import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class Dialog extends MemoryFarben {
 
-	Color ausgewaehlteFarbe;
-	JTextField lab = new JTextField();
+	static Color ausgewaehlteFarbe;
+	static JTextField lab = new JTextField();
 	
 	//JFrame f = new JFrame();
 	JButton hinterground = new JButton();
@@ -35,25 +26,27 @@ public class Dialog extends MemoryFarben {
 	JMenuItem menuHintergrund=new JMenuItem("Hintergrundfarbe");
 	JMenuItem menuSchrift=new JMenuItem("Schriftfarbe");
 	
-	JFrame f;
+	static JFrame f;
 
 	public Dialog(JFrame frame) {
 		super(frame);
-		this.f = frame;
+		Dialog.f = frame;
 	}
 
-	public void chooseColorHinterground() {
+	public static void chooseColorHinterground() {
 		ausgewaehlteFarbe = JColorChooser.showDialog(null, "Farbauswahl", null);
 		Color c = ausgewaehlteFarbe;
 		hintergrundFarbe = c;
 		f.getContentPane().setBackground(c);
+		StartStopp.timeF.setBackground(c);
 	}
 
-	public void chooseColorSchrift() {
+	public static void chooseColorSchrift() {
 		ausgewaehlteFarbe = JColorChooser.showDialog(null, "Farbauswahl", null);
 		Color c = ausgewaehlteFarbe;
 		schriftFarbe = c;
 		lab.setForeground(c);
+		StartStopp.timeF.setForeground(c); 
 
 	}
 
@@ -102,8 +95,7 @@ public class Dialog extends MemoryFarben {
 
 
 	public void create() {
-		f.setTitle("Mein JDialog Beispiel");
-		f.setBounds(200, 200, 400, 300);
+	
 		try {
 			restoreFile(f);
 		} catch (IOException e) {
@@ -112,10 +104,10 @@ public class Dialog extends MemoryFarben {
 		}
 		Color farbeH =hcolor;
 		f.getContentPane().setBackground(farbeH);
-		lab.setBounds(100, 100, 100, 40);
-		lab.setForeground(scolor);
-		f.add(lab);
-		f.setLayout(null);
+		//lab.setBounds(100, 100, 100, 40);
+		//lab.setForeground(scolor);
+		//f.add(lab);
+		//f.setLayout(null);
 		menu();
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setVisible(true);		

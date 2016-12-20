@@ -1,4 +1,4 @@
-package AnalogUhrFertig;
+package digital;
 import java.awt.Color;
 import java.awt.Frame;
 import java.awt.event.WindowAdapter;
@@ -20,7 +20,7 @@ public class Memory {
 	static Color schriftFarbe;
 	static Color hcolor;
 	static Color scolor;
-	static File file = new File("setAnalog.txt");
+	static File file = new File("setDigi.txt");
 	static Properties p = new Properties();
 	static JFrame frm;
 
