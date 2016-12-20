@@ -72,7 +72,7 @@ Laden Sie sich die Datei xyz.jar auf ihren Pc runter. Und führen Sie sie aus.
 
 ## Kurze Bedienungsanleitung
 
-Zum Starten der Uhr drücken Sie bitte auf Start. Sie können die Uhr mittels Stop anhalten. Unter Einstellungen können Sie die Farben und die Schriftgröße ändern.  
+Zum Starten der Uhr drücken Sie bitte auf Start. Sie können die Uhr mittels Stop anhalten. Unter Einstellungen können Sie die Farben ändern.  Nach Wunsch können sie auch zur Analoguhr umschalten.  
 
 ## User Stories
 
@@ -129,6 +129,20 @@ Um die Positon des Fensters zu speichern haben wir uns fogendes überlegt:
 ![webapps](doku/Memory2.PNG)
 
 #### Testfaelle bedingt durch Akzeptanzkritierium
+
+######Testfälle:
+
+    +Nach dem Starten des Programmes läuft die Uhr (wenn man auf Start dückt).
+    +Die Uhrzeit stimmt mit der vom PC überein.
+    +Die Uhr ist stoppbar.Die Zeit bleibt stehen und wird weiterhin angezeigt.
+    +Sie kann wieder gestarten werden. 
+    +Start und Stopp ist beliebig oft ausführbar.
+    +Beim wiederaufrufen des Programms öffnet sich die Uhr an der gleichen Stelle, wie beim schließen.
+    
+######Resultat:
+
+Alle Testversuche waren erfolgreich.    
+       
 ## Dokumentation Sprint 2
 #### Taskliste der User Stories
 
@@ -145,6 +159,27 @@ Dementsprechend sind alle neuen Klassen recht ählich. Hier unten beispielhaft d
 ![webapps](doku/Farbe2.PNG)
 s
 #### Testfaelle bedingt durch Akzeptanzkritierium
+######Testfälle:
+
+Die alten Funktionen der Uhr sollen natürlich erhalten bleiben:
+
+    +Nach dem Starten des Programmes läuft die Uhr (wenn man auf Start dückt).
+    +Die Uhrzeit stimmt mit der vom PC überein.
+    +Die Uhr ist stoppbar.Die Zeit bleibt stehen und wird weiterhin angezeigt.
+    +Sie kann wieder gestarten werden. 
+    +Start und Stopp ist beliebig oft ausführbar.
+    +Beim wiederaufrufen des Programms öffnet sich die Uhr an der gleichen Stelle, wie beim schließen.
+
+Zusätzlich kommen hinzu:
+     
+     +Der Nutzer kann mehrmals hintereinander die Schriftfarbe ändern.
+     +Der Nutzer kann mehrmals hintereinander die Hintergrundfarbe ändern.
+     +Beim Neustart werden die letzt ausgewählten Farben präsentiert.
+     
+         
+######Resultat:
+
+
 ## Dokumentation Sprint 3
 #### Taskliste der User Stories
 
@@ -153,6 +188,26 @@ s
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
 #### Testfaelle bedingt durch Akzeptanzkritierium
+
+Die alten Funktionen der Uhr sollen natürlich erhalten bleiben:
+
+    +Nach dem Starten des Programmes läuft die Uhr (wenn man auf Start dückt).
+    +Die Uhrzeit stimmt mit der vom PC überein.
+    +Die Uhr ist stoppbar.Die Zeit bleibt stehen und wird weiterhin angezeigt.
+    +Sie kann wieder gestarten werden. 
+    +Start und Stopp ist beliebig oft ausführbar.
+    +Beim wiederaufrufen des Programms öffnet sich die Uhr an der gleichen Stelle, wie beim schließen. 
+    +Der Nutzer kann mehrmals hintereinander die Schriftfarbe ändern.
+    +Der Nutzer kann mehrmals hintereinander die Hintergrundfarbe ändern.
+    +Beim Neustart werden die letzt ausgewählten Farben präsentiert.
+
+Zusätzlich kommen hinzu:
+
+    +Eine Analoguhr ist startbar über ein Untermenu. Sie zeigt die aktuelle Zeit an.
+    
+
+######Resultat:
+
 ## Dokumentation Sprint 4
 #### Taskliste der User Stories
 
@@ -161,5 +216,30 @@ s
 #### UML Klassen- und Sequenzdiagramme
 #### Dokumentation wichtiger Code Snippets
 #### Testfaelle bedingt durch Akzeptanzkritierium
+
+######Testfälle:
+
+Die alten Funktionen der Uhr sollen natürlich erhalten bleiben:
+
+    +Nach dem Starten des Programmes läuft die Uhr (wenn man auf Start dückt).
+    +Die Uhrzeit stimmt mit der vom PC überein.
+    +Die Uhr ist stoppbar.Die Zeit bleibt stehen und wird weiterhin angezeigt.
+    +Sie kann wieder gestarten werden. 
+    +Start und Stopp ist beliebig oft ausführbar.
+    +Beim wiederaufrufen des Programms öffnet sich die Uhr an der gleichen Stelle, wie beim schließen. 
+    +Der Nutzer kann mehrmals hintereinander die Schriftfarbe ändern.
+    +Der Nutzer kann mehrmals hintereinander die Hintergrundfarbe ändern.
+    +Beim Neustart werden die letzt ausgewählten Farben präsentiert.
+
+Zusätzlich kommen hinzu:
+     
+     +mehere Uhren laufen gemeinsam.
+     +mehere Uhren laufen gemainsam, aber in unterschiedlichen Zeitzonen.
+     +Das Design der Uhr kann dauerhaft verändert werden. Es sind mehere unterschiedliche Designs möglich. 
+     
+    
+     
+         
+######Resultat:
 
 
