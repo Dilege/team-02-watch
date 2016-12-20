@@ -24,6 +24,8 @@ public class StartStopp extends Gui {
 		 static Color farbeSchrift;
 		 static Color farbeHintergrung;
 		 static Timer t ;
+		 static Calendar jetzt = Calendar.getInstance();
+		 static String text = String.format("%5tT", jetzt);
       public static void Einlesen(){
     	  menuSchrift.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent arg0) {
@@ -45,6 +47,7 @@ public class StartStopp extends Gui {
   	}
     
       
+     
 		 public static void Uhr(){
 			 timeF.setBackground(farbeHintergrung);
 				timeF2.setBackground(farbeHintergrung);
@@ -63,28 +66,26 @@ public class StartStopp extends Gui {
 			        timeF2.setForeground(farbeSchrift);
 				}
 				
-				//timeF.setVisible(true);
-				//timeF2.setVisible(true);
 				timeF.setBounds(10, 10, 180, 60);
 				timeF2.setBounds(200, 10, 180, 60);
 				//timeF.setForeground(MemoryFarben.schriftFarbe);
-				timeF.setFont(new Font("Arial", Font.HANGING_BASELINE, 30));
-				timeF2.setFont(new Font("Arial", Font.HANGING_BASELINE, 30));
+				timeF.setFont(font);
+				timeF2.setFont(font);
 		        timeF.setEditable(false);
 		        timeF2.setEditable(false);
 		        timeF.setHorizontalAlignment(JTextField.CENTER);
 		        timeF2.setHorizontalAlignment(JTextField.CENTER);
 		        //timeF.setBackground(Farben.ausgewaehlteFarbe);
 		        //timeF.setForeground(Farben.hcolor);
-		        StartStopp.timeF.setVisible(true);
-				StartStopp.timeF2.setVisible(true);
+		        timeF.setVisible(true);
+				timeF2.setVisible(true);
 			       
 		 }
 		 public static void start(){
 			  t = new Timer(1000, new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						Calendar jetzt = Calendar.getInstance();
-						String text = String.format("%5tT", jetzt);
+						 jetzt = Calendar.getInstance();
+						 text = String.format("%5tT", jetzt);
 					    timeF.setText(text);
 					    timeF2.setText(text);
 			
@@ -102,12 +103,12 @@ public class StartStopp extends Gui {
 	        
 			Timer t = new Timer(1000, new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					Calendar jetzt = Calendar.getInstance();
+					jetzt = Calendar.getInstance();
 //					//int stunde = jetzt.get(Calendar.HOUR_OF_DAY);
 //					//int min = jetzt.get(Calendar.MINUTE);
 //					//int sec = jetzt.get(Calendar.SECOND);
 //					//timeF.setText(+stunde + ":" + min + ":" + sec);
-				String text = String.format("%5tT", jetzt);
+				     text = String.format("%5tT", jetzt);
 			    timeF.setText(text);
 			    timeF2.setText(text);
 				}
