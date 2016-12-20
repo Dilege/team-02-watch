@@ -2,6 +2,8 @@ package Uhr;
  
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -54,6 +56,55 @@ public class Gui extends JFrame {
 				setVisible(true);
 			}
 		});
+		
+		// Menu 2 Uhren
+
+				JMenu AnzahlUhren = new JMenu("Anzahl Uhren");
+				menuBar.add(AnzahlUhren);
+				
+				JMenuItem einUhren = new JMenuItem("Eine Uhr");
+				AnzahlUhren.add(einUhren);
+			      einUhren.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						setVisible(false);
+						getContentPane().removeAll();
+						
+						//setTitle(null);
+						//repaint();
+						//digital.Gui version2 = new digital.Gui();
+						
+						///Main.main(null);
+						digital.Gui gui = new digital.Gui();
+						gui.getFrame().addWindowListener(new WindowAdapter(){
+							@Override
+							public void windowClosed(WindowEvent evt){
+								repaint();
+							}
+						});
+						//SetUp set = new SetUp("Analog Watch", 400);
+						//set.start();
+						//repaint();
+						setVisible(true);
+					}
+				});
+				
+				JMenuItem zweiUhren = new JMenuItem("Zwei Uhren");
+				AnzahlUhren.add(zweiUhren);
+				zweiUhren.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						setVisible(false);
+						getContentPane().removeAll();
+						
+						//setTitle(null);
+						//repaint();
+						//digital.Gui version2 = new digital.Gui();
+						digital.Main.main(null);
+						//SetUp set = new SetUp("Analog Watch", 400);
+						//set.start();
+						//repaint();
+						setVisible(true);
+					}
+				});
 
 		// Unter-Menu Hintergrundfarbe
 		JMenuItem BackgroundColorItem = new JMenuItem("Hintergrundfarbe");

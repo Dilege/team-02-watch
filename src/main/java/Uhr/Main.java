@@ -16,6 +16,8 @@ public class Main {
 			    //set.start();
 			    frame.setVisible(true);
 			    //frame.pack(); 
+			  // digital.Gui version2 = new digital.Gui();
+			   //digital.Main.main(args);
 			   
 			    MemoryWindow.frm =frame;
 			    MemoryWindow.event();
@@ -26,6 +28,8 @@ public class Main {
 			    MemoryFarben myMemory = new MemoryFarben(frame);
 			    myMemory.event();
 			    
+			    
+			   
 			   // new Farben();
 				} catch (Exception e) {
 					e.printStackTrace();

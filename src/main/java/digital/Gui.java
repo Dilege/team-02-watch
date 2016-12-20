@@ -4,7 +4,8 @@ import javax.swing.JFrame;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 import javax.swing.JColorChooser;
 import javax.swing.JMenu;
@@ -16,6 +17,12 @@ import javax.swing.Timer;
 
 public class Gui extends SetUpMemory {
 	static JFrame frame = new JFrame();
+	
+	public JFrame getFrame() {
+		return frame;
+	}
+
+
 	static Color ausgewaehlteFarbe;
 	static Timer timer;
 	JMenuItem menuHintergrund=new JMenuItem("Hintergrundfarbe");
@@ -25,21 +32,27 @@ public class Gui extends SetUpMemory {
 		Fenster();
 				
 	}
-	public void position(){
-		frm=frame;
-		store();
-		restore();
-	}
 
 	// Frame
 	public void Fenster() {
 		
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		frame.addWindowListener(new WindowAdapter(){
+			@Override
+			public void windowClosing(WindowEvent evt){
+				frame.dispose();
+			}
+			@Override
+			public void windowClosed(WindowEvent evt){
+				System.out.println("closed");
+			}
+		});
+
 		frame.setBounds(100, 100, 400, 400);
 		frame.setTitle("The Watch");
 		button();
 		restore();
-		//position();
+		
 		frame.getContentPane().setBackground(hcolor);
 		// setLocationRelativeTo(null);
 		menuEinstellungen();
@@ -79,7 +92,6 @@ public class Gui extends SetUpMemory {
 	// START- STOPP Buttons
 	public void button() {
 		StartStopp.Uhr();
-		StartStopp.Color();
 		StartStopp.t=timer;
 		final JButton startButton = new JButton("START");
 		final JButton stoppButton = new JButton("STOP");
@@ -91,8 +103,6 @@ public class Gui extends SetUpMemory {
 			public void actionPerformed(ActionEvent e) {
 				startButton.setText("Go!");
 				stoppButton.setText("STOP");
-				StartStopp.Uhr();
-				StartStopp.Color();
 		        StartStopp.start();
 		        
 				
@@ -106,7 +116,6 @@ public class Gui extends SetUpMemory {
 			public void actionPerformed(ActionEvent e) {
 				startButton.setText("START");
 				stoppButton.setText("Stop!");
-				StartStopp.Uhr();
 				StartStopp.stop();
 			}
 			

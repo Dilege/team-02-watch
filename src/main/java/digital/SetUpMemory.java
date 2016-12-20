@@ -49,11 +49,6 @@ public class SetUpMemory extends Memory{
 			int sr = 150;
 			int sg = 10;
 			int sb = 60;
-		/*	//Defautl position
-			int x=100;
-			int y=100;
-			int b=400;
-			int h=400;*/
 			//Die ganzen Variablen in den "Properties p " speichern
 			p.setProperty("hr", "" + hr);
 			p.setProperty("hg", "" + hg);

@@ -40,7 +40,7 @@ public class Display extends SetUpMemory {
       frm=frame;
        frame = new JFrame(title);
        frame.setSize(size, size);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
        frame.setResizable(false);
        restore();
         eischtellunegenMenu();
