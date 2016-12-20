@@ -1,6 +1,6 @@
 #Eigenschaften vom Frame
-#Mon Dec 19 22:08:03 CET 2016
-b=400
-x=200
-h=300
-y=200
+#Tue Dec 20 10:21:02 CET 2016
+b=457
+x=897
+h=309
+y=176

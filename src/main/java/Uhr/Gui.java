@@ -1,18 +1,13 @@
 package Uhr;
  
-import javax.swing.JFrame;
-
-import java.awt.Color;
-import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-import javax.swing.JTextField;
-import javax.swing.SwingUtilities;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
 
 @SuppressWarnings("serial")
 public class Gui extends JFrame {
@@ -25,6 +20,7 @@ public class Gui extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		setTitle("The Watch");
+		//setBackground(MemoryFarben.hcolor); 
 		// setLocationRelativeTo(null);
 		getContentPane().setLayout(null);
 
@@ -64,26 +60,28 @@ public class Gui extends JFrame {
 		BackgroundColorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Hintergrundfarbe auswaehlen");
-				Farben.chooseColorHinterground();
+				Dialog.chooseColorHinterground();
 				MemoryFarben memory = new MemoryFarben(new JFrame());
 				memory.event();
+	            
 
 			}
 		});
-		konfig.add(BackgroundColorItem);
 		Farben.hintergrundFarbe = Farben.hcolor;
-
+		konfig.add(BackgroundColorItem);
+	
 		// Unter-Menu Schriftfarbe
 		JMenuItem writingColorItem = new JMenuItem("Schriftfarbe");
 		writingColorItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Farben.chooseColorSchrift();
+				Dialog.chooseColorSchrift();
 				MemoryFarben memory = new MemoryFarben(new JFrame());
 				memory.event();
+			
 			}
 		});
 		konfig.add(writingColorItem);
-		Farben.schriftFarbe = Farben.scolor;
+			Farben.schriftFarbe = Farben.scolor;
 
 		// Unter-Menu Schriftgroesse
 		JMenuItem writingSize = new JMenuItem("Schriftgroesse");
@@ -126,6 +124,7 @@ public class Gui extends JFrame {
 				stoppButton.setText("STOPP");
 				StartStopp.start();
 				getContentPane().add(StartStopp.timeF);
+				StartStopp.timeF.setVisible(true);
 			}
 		});
 
