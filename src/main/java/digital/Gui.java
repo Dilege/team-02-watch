@@ -64,10 +64,12 @@ public class Gui extends SetUpMemory {
 		menuSchriftGreosse.addActionListener(new ActionListener() {
 		      public void actionPerformed(ActionEvent e) {
 		        fc.setVisible(true);
+		        Font f=new Font("Arial",Font.HANGING_BASELINE,30);
+		        System.out.println(f);
 		        font = fc.getSelectedFont();
-		        System.out.println("You chose " + font);
-		        
+		        System.out.println("You chose " + font); 
 		        fc.dispose();
+		        StartStopp.Uhr();
 		      }
 		    });
 	}

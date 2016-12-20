@@ -168,7 +168,7 @@ public class Schriftgroesse extends JDialog {
 
     previewFont(); // ensure view is up to date!
 
-    pack();
+    //pack();
     setLocation(100, 100);
   }
 
