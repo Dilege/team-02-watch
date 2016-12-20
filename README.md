@@ -58,17 +58,19 @@ Zum Nachbauen:
 
 Java: JDK 8.0 
 Eclipse EE
-Build-Automatisierung: Maven
 
 Die Umgebungsvariable JAVA_HOME muss korrekt eingestellt sein und java muss im Datei-Pfad gefunden werden. 
 
 Einfaches Ausführen: 
 
-Java: JDK 8.0 
+Java: JRE 
 
 ## Buil-Anleitung
 
-Laden Sie sich die Datei xyz.jar auf ihren Pc runter. Und führen Sie sie aus.
+    -Laden Sie sich die Datei .jar auf ihren Pc runter. 
+    -Vergewissern Sie sich, dass Sie eine Java Runtime Environment auf Ihrem PC haben.
+    -Führen Sie die Datei durch einen Doppelklick auf ebenjene aus. Alternativ können Sie auch über die Konsole die Datei mit: java -Name.jar ausführen. 
+    
 
 ## Kurze Bedienungsanleitung
 
