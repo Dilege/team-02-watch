@@ -4,6 +4,7 @@ import javax.swing.JFrame;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 import javax.swing.JColorChooser;
 import javax.swing.JMenu;
@@ -24,6 +25,11 @@ public class Gui extends SetUpMemory {
 		Fenster();
 				
 	}
+	public void position(){
+		frm=frame;
+		store();
+		restore();
+	}
 
 	// Frame
 	public void Fenster() {
@@ -33,7 +39,7 @@ public class Gui extends SetUpMemory {
 		frame.setTitle("The Watch");
 		button();
 		restore();
-		
+		//position();
 		frame.getContentPane().setBackground(hcolor);
 		// setLocationRelativeTo(null);
 		menuEinstellungen();
@@ -73,6 +79,7 @@ public class Gui extends SetUpMemory {
 	// START- STOPP Buttons
 	public void button() {
 		StartStopp.Uhr();
+		StartStopp.Color();
 		StartStopp.t=timer;
 		final JButton startButton = new JButton("START");
 		final JButton stoppButton = new JButton("STOP");
@@ -84,6 +91,8 @@ public class Gui extends SetUpMemory {
 			public void actionPerformed(ActionEvent e) {
 				startButton.setText("Go!");
 				stoppButton.setText("STOP");
+				StartStopp.Uhr();
+				StartStopp.Color();
 		        StartStopp.start();
 		        
 				
@@ -97,6 +106,7 @@ public class Gui extends SetUpMemory {
 			public void actionPerformed(ActionEvent e) {
 				startButton.setText("START");
 				stoppButton.setText("Stop!");
+				StartStopp.Uhr();
 				StartStopp.stop();
 			}
 			

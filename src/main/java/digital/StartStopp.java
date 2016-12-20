@@ -1,5 +1,5 @@
-package digital;
 
+package digital;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -44,7 +44,10 @@ public class StartStopp extends Gui {
 
   	}
     
-      
+      public static void Color(){
+    	  timeF.setForeground(scolor);
+		timeF2.setForeground(scolor);
+      }
 		 public static void Uhr(){
 			 timeF.setBackground(farbeHintergrung);
 				timeF2.setBackground(farbeHintergrung);
@@ -54,8 +57,7 @@ public class StartStopp extends Gui {
 				System.out.println(farbeHintergrung);
 				start();
 				restore();
-				timeF.setForeground(scolor);
-			    timeF2.setForeground(scolor);
+				
 				
 				//timeF.setVisible(true);
 				//timeF2.setVisible(true);
@@ -70,8 +72,8 @@ public class StartStopp extends Gui {
 		        timeF2.setHorizontalAlignment(JTextField.CENTER);
 		        //timeF.setBackground(Farben.ausgewaehlteFarbe);
 		        //timeF.setForeground(Farben.hcolor);
-		        StartStopp.timeF.setVisible(true);
-				StartStopp.timeF2.setVisible(true);
+		        timeF.setVisible(true);
+				timeF2.setVisible(true);
 			       
 		 }
 		 public static void start(){
