@@ -38,7 +38,6 @@ public class Dialog extends MemoryFarben {
 		Color c = ausgewaehlteFarbe;
 		hintergrundFarbe = c;
 		f.getContentPane().setBackground(c);
-		StartStopp.timeF.setBackground(c);
 	}
 
 	public static void chooseColorSchrift() {
@@ -46,7 +45,6 @@ public class Dialog extends MemoryFarben {
 		Color c = ausgewaehlteFarbe;
 		schriftFarbe = c;
 		lab.setForeground(c);
-		StartStopp.timeF.setForeground(c); 
 
 	}
 

@@ -1,8 +1,5 @@
 package Uhr;
 import java.awt.Color;
-import java.awt.Frame;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -11,7 +8,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Properties;
 
-import javax.swing.JDialog;
 import javax.swing.JFrame;
 
 public class Memory {

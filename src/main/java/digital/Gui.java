@@ -37,7 +37,7 @@ public class Gui extends SetUpMemory {
 	// Frame
 	public void Fenster() {
 		
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		//.DISPOSE_ON_CLOSE
 		
 		frame.setBounds(100, 100, 400, 400);
