@@ -183,9 +183,11 @@ Zusätzlich kommen hinzu:
      +Der Nutzer kann mehrmals hintereinander die Schriftfarbe ändern.
      +Der Nutzer kann mehrmals hintereinander die Hintergrundfarbe ändern.
      +Beim Neustart werden die letzt ausgewählten Farben präsentiert.
-     
+    
          
 ######Resultat:
+
+Die Digitaluhr läuft wieim Sprint 1. Zusätzlich können die Farben im Programmablauf geändert werden. Leider haben wir es nicht geschafft Sie beim nächsten Start wieder aufzurufen. 
 
 
 ## Dokumentation Sprint 3
@@ -194,7 +196,28 @@ Zusätzlich kommen hinzu:
 ![webapps](doku\Task3.PNG)
 
 #### UML Klassen- und Sequenzdiagramme
+
+
+![webapps](doku/Class3.jpg)
+
+
+![webapps](doku/Sequenz3.png.jpg)
+
 #### Dokumentation wichtiger Code Snippets
+
+Eine der schwereren Codebestandteile war das programmieren des Blattes: 
+
+![webapps](doku/analog_blatt1.PNG)
+
+![webapps](doku/analog_blatt2.PNG)
+
+![webapps](doku/analog_blatt3.PNG)
+
+Implementierung der Uhr im Menu der anderen:
+
+![webapps](doku/analog_impl.PNG)
+
+
 #### Testfaelle bedingt durch Akzeptanzkritierium
 
 Die alten Funktionen der Uhr sollen natürlich erhalten bleiben:
@@ -215,6 +238,8 @@ Zusätzlich kommen hinzu:
     
 
 ######Resultat:
+
+Die Analoguhr lässt sich problemlos aufrufen, leider ist danach keine Rückkehr zur Digitaluhr möglich. An der Funktionsweise der Digitaluhr ändert sich nichts.
 
 ## Dokumentation Sprint 4
 #### Taskliste der User Stories
@@ -249,5 +274,4 @@ Zusätzlich kommen hinzu:
      
          
 ######Resultat:
-
 
