@@ -1,11 +1,11 @@
 #FarbEigenschaften
-#Wed Dec 21 00:20:09 CET 2016
-sch=Arial Rounded MT Bold
+#Wed Dec 21 01:02:39 CET 2016
+sch=Bodoni MT Condensed
 sr=255
-hg=0
+hg=51
 art=0
 sg=255
 hb=255
 sb=255
-hr=153
-size=30
+hr=51
+size=48
