@@ -47,7 +47,7 @@ public class Gui extends JFrame {
 		getContentPane().add(lblBitteWhlenSie);
 		
 		JLabel lblNewLabel = new JLabel("");
-		Image img =new ImageIcon(this.getClass().getResource("/Image1.png")).getImage();
+		Image img =new ImageIcon(this.getClass().getResource("Image1.png")).getImage();
 		lblNewLabel.setIcon(new ImageIcon(img));
 		lblNewLabel.setBounds(26, 141, 116, 104);
 		getContentPane().add(lblNewLabel);

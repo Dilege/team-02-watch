@@ -12,7 +12,7 @@ Mitglieder: Tobias, Vianney,Amalie, Mohammed
 1. [Einleitung](#einleitung)
 1. [Ziele](#ziele)
 1. [Randbedingungen](#randbedingungen)
-1. [Build-Anleitung](#buil-anleitung)
+1. [Build-Anleitung](#build-anleitung)
 1. [Kurze Bedienungsanleitung](#kurze-bedienungsanleitung)
 1. [User Stories](#user-stories)
 1. [Releaseplan](#releaseplan)
@@ -65,7 +65,7 @@ Einfaches Ausführen:
 
 Java: JRE 
 
-## Buil-Anleitung
+## Build-Anleitung
 
     -Laden Sie sich die Datei .jar auf ihren Pc runter. 
     -Vergewissern Sie sich, dass Sie eine Java Runtime Environment auf Ihrem PC haben.
