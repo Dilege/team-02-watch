@@ -189,7 +189,7 @@ Zusätzlich kommen hinzu:
          
 ######Resultat:
 
-Die Digitaluhr läuft wieim Sprint 1. Zusätzlich können die Farben im Programmablauf geändert werden. Leider haben wir es nicht geschafft Sie beim nächsten Start wieder aufzurufen. 
+Die Digitaluhr läuft wieim Sprint 1. Zusätzlich können die Farben im Programmablauf geändert werden. Auch die Speicherung klappt.
 
 
 ## Dokumentation Sprint 3
@@ -241,7 +241,7 @@ Zusätzlich kommen hinzu:
 
 ######Resultat:
 
-Die Analoguhr lässt sich problemlos aufrufen, leider ist danach keine Rückkehr zur Digitaluhr möglich. An der Funktionsweise der Digitaluhr ändert sich nichts.
+Die Analoguhr lässt sich problemlos aufrufen, Rückkehr zur Digitaluhr möglich. An der Funktionsweise der Digitaluhr ändert sich nichts.
 
 ## Dokumentation Sprint 4
 #### Taskliste der User Stories
@@ -249,6 +249,8 @@ Die Analoguhr lässt sich problemlos aufrufen, leider ist danach keine Rückkehr
 ![webapps](doku/Task4.PNG)
 
 #### UML Klassen- und Sequenzdiagramme
+
+
 #### Dokumentation wichtiger Code Snippets
 #### Testfaelle bedingt durch Akzeptanzkritierium
 
@@ -276,4 +278,6 @@ Zusätzlich kommen hinzu:
      
          
 ######Resultat:
+
+Alle Tests erfolgreich. 
 
