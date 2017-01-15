@@ -250,6 +250,8 @@ Die Analoguhr lässt sich problemlos aufrufen, Rückkehr zur Digitaluhr möglich
 
 #### UML Klassen- und Sequenzdiagramme
 
+![webapps](doku/Class4.jpg)
+
 
 #### Dokumentation wichtiger Code Snippets
 #### Testfaelle bedingt durch Akzeptanzkritierium
